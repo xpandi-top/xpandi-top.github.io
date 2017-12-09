@@ -3,16 +3,16 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description:
-author: John Doe
-language:
-timezone:
+title: My website
+subtitle: My Subtitle
+description: My description
+author: Hypan599
+language: zh-CN
+timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://xpandi.top
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -77,4 +77,6 @@ theme: landscape
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: git@github.com:xpandi-top/xpandi-top.github.io.git
+  branch: master
