@@ -25,7 +25,8 @@ hexo -d
 在新电脑上配置的流程：
 在本机目录进行git clone
 在git bash 中执行：
+```
 npm install hexo
 npm install
 npm install hexo-deployer-git
-
+```
