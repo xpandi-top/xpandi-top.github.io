@@ -6,21 +6,19 @@ tags:
 现在的github repo 结构：
 branch hexo  存放hexo的source code
 branch master 存放hexo的渲染之后的文件。
-```
-1 + 1 = 2
-# only some test
-```
 
 添加文章的流程：
 在repo的目录（U:/xpandi-top.github.io/）下右键->git bash
 hexo new "name"
 编辑“name.md"文件
-执行hexo -g
 然后执行
+```
 git add .
 git commit -m "add file"
 git push origin hexo
-hexo -d
+hexo generate
+hexo generate -d
+```
 
 在新电脑上配置的流程：
 在本机目录进行git clone
