@@ -9,7 +9,7 @@ branch master 存放hexo的渲染之后的文件。
 
 添加文章的流程：
 在repo的目录（U:/xpandi-top.github.io/）下右键->git bash
->>> hexo new "name"
+hexo new "name"
 编辑“name.md"文件
 执行hexo -g
 然后执行
