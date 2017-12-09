@@ -6,6 +6,10 @@ tags:
 现在的github repo 结构：
 branch hexo  存放hexo的source code
 branch master 存放hexo的渲染之后的文件。
+```
+1 + 1 = 2
+# only some test
+```
 
 添加文章的流程：
 在repo的目录（U:/xpandi-top.github.io/）下右键->git bash
