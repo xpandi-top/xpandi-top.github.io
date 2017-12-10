@@ -7,3 +7,6 @@ public/
 .deploy*/
 save_changes.bat
 update.bat
+save_changes.sh
+update.sh
+
