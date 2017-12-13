@@ -1,6 +1,7 @@
 ---
 title: two branches are working
 date: 2017-12-09 18:01:12
+categories: 杂谈
 tags:
 ---
 现在的github repo 结构：

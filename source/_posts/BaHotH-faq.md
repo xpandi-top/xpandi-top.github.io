@@ -1,6 +1,7 @@
 ---
 title: BaHotH_faq
 date: 2017-12-13 15:24:48
+categories: Board Game
 tags:
 ---
 最近入坑小黑屋，发现规则还比较复杂，而且有些说明书没有说清楚。在网上找了一圈FAQ之后决定自己整理一下。
