@@ -47,7 +47,7 @@ tags: [桌游, 昆虫棋, 规则]
 
 -   移动
     +    最基本的动作。移动过程中棋子始终处在蜂巢所在的桌面上。
-    +    移动过程是类似于在桌面滑动的形式。因此如果某个棋子由于周围的阻挡不能滑出原来的位置，那么其不可移动(攀爬不受此影响)。如图：
+    +    移动过程是类似于在桌面滑动的形式。因此如果某个棋子由于周围的阻挡不能滑出原来的位置，那么其不可移动(攀爬不受此影响)。如果一枚棋子相邻的棋子不多余三枚，则其不会被阻挡而不能离开；若一枚棋子相邻的棋子数目为4，则需要判断该棋子自由的两边是否相邻，是的话可以移动， 不是则不能移动；如果一枚棋子周围的棋子多于4枚，则其必然不能移动。
 
 -   攀爬
     +   棋子离开桌面，停留在另一枚棋子上方。
@@ -60,7 +60,7 @@ tags: [桌游, 昆虫棋, 规则]
 - ### 特殊能力
 
 - 蜂后 QUEEN
-    + 只能移动一步
+    + 无能力，只能移动一步
 - 蜘蛛 SPIDER
     + 必须移动恰好三步
     + 移动过程中不能往返
@@ -82,14 +82,24 @@ tags: [桌游, 昆虫棋, 规则]
     + 可以移动一步，或者执行以下移动
     + 潮虫让紧邻自己的一枚棋子攀爬到自己上方，再使其落下到自己身旁其他位置
 
-###### 未完待续
-
+- ### 扩充包
+- #### 额外的新角色
 - 螳螂 MANTLS
+    + When starting its turn on ground level, the Mantis cannot move. However, the Mantis can grab an adjacent bug, moving the bug underneath the Mantis. It can only grab a piece if there is a shared unoccupied space adjacent to both of them and if moving the piece would not split the Hive. On the Hive, the Mantis moves like a Beetle. The Mantis is on the same tile as the Beetle
 - 苍蝇 
+    + The Fly moves one space around the Hive if it has the freedom to do so. If the Fly does not have the freedom to move, and if removing the Fly would not break the one Hive rule, the Fly may fly to any unoccupied space on the ground level. The Fly is on the same tile as the Grasshopper
 - 蝎子
+    + The Scorpion moves exactly three spaces along the hive, similar to the spider. No piece is allowed to move on top of, jump over, or move, the Scorpion, even if momentarily during their movement. The Mosquito does not copy this ability. The Scorpion is on the same tile as the Spider.
 - 蚂蜂
+    + The Wasp can fly to any unoccupied space provided that the space only touches the opponent's pieces (or stacks where an opponent's piece is on top). The Wasp can move into and out of surrounded spaces. It is still placed normally and can have pieces of the same colour adjacent to it so long as the Wasp itself is not moved adjacent to a piece or stack of the same colour. The Wasp is on the same tile as the Ant.
 - 蟑螂
+    + The Cockroach moves like the Ladybug, first on top of the Hive, and then one space down to ground level. The Cockroach must move onto the Hive as its first movement, and must move onto ground level for its final movement, however, its total movement on the hive is not restricted, except that it cannot move over pieces belonging to the opponent. The Cockroach is on the same tile as the Ladybug.
 - 蜻蜓
+    + The Dragonfly moves one space forward, and then one space forward- left or forward-right. It may move onto and land on top of the Hive. If the Dragonfly starts its turn on top the hive and moves to an unoccupied space, it carries with it the piece it is on top of, provided that moving the piece would not break the one Hive rule. It cannot move another Dragonfly. The Dragonfly is on the same tile as the Mosquito.
 - 蜈蚣
+    + The Centipede either moves one space or switches positions with an adjacent bug. It can only switch places with a piece if there is a shared unoccupied space adjacent to both of them. It cannot switch places with a piece under a stack, or if the centipede itself is under a stack. The Centipede may not switch places with another Centipede or a Pill Bug. The Centipede is on the same tile as the Pill Bug.
+- ### 进行进阶游戏
 
-附图：
+除了蜂后之外的每个棋子都是双面的。两面的昆虫不同，不会同时参与游戏。
+
+开始游戏时，每人选择一个蜂后，然后从剩下的11枚棋子中选出自己想要的角色。
