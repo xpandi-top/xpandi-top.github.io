@@ -2,7 +2,7 @@
 title: two branches are working
 date: 2017-12-09 18:01:12
 categories: 技术
-tags: 博客 hexo
+tags: [博客, hexo, git]
 author: 黑黑
 ---
 现在的github repo 结构：
