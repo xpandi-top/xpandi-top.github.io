@@ -35,4 +35,6 @@
 {% block script_extra %}
   {% include '_scripts/pages/post-details.swig' %}
 {% endblock %}
+<!-- 
 <span class="post-count">{{ wordcount(post.content) }}</span>
+-->
