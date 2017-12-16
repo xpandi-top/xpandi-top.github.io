@@ -26,29 +26,7 @@
   {% endif %}
 </div>
 
-{ #
 
-{% if theme.footer.powered %}
-
-  <div class="powered-by">
-    {{ __('footer.powered', '') }}
-  </div>
-
-{% endif %}
-
-{% if theme.footer.powered and theme.footer.theme.enable %}
-  <span class="post-meta-divider">|</span>
-{% endif %}
-
-{% if theme.footer.theme.enable %}
-
-  <div class="theme-info">
-    {{ __('footer.theme') }} &mdash;
-    {% if theme.footer.theme.version %} v{{ theme.version }}{% endif %}
-  </div>
-{% endif %}
-
-# }
 
 {% if theme.footer.custom_text %}
   <div class="footer-custom">{#
