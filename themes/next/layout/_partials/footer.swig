@@ -28,9 +28,11 @@
       本站访客数:<span id="busuanzi_value_site_pv"></span>
     </span>
   </div>
+<!--
   <div class="powered-by">{#
   #}{{ __('footer.powered', '<a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a>') }}{#
 #}</div>
+-->
 {% endif %}
 
 {% if theme.footer.powered and theme.footer.theme.enable %}
@@ -38,12 +40,14 @@
 {% endif %}
 
 {% if theme.footer.theme.enable %}
+<!--
   <div class="theme-info">{#
   #}{{ __('footer.theme') }} &mdash; {#
   #}<a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">{#
     #}NexT.{{ theme.scheme }}{#
   #}</a>{% if theme.footer.theme.version %} v{{ theme.version }}{% endif %}{#
 #}</div>
+-->
 {% endif %}
 
 {% if theme.footer.custom_text %}
