@@ -19,15 +19,15 @@
     <span title="{{ __('post.totalcount') }}">{#
     #}{{ totalcount(site, '0,0.0a') }}{#
   #}</span>
-  {% endif %}
-</div>
-
-{% if theme.footer.powered %}
   <div class="powered-by">
     <i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
       本站访客数:<span id="busuanzi_value_site_pv"></span>
     </span>
   </div>
+  {% endif %}
+</div>
+
+{% if theme.footer.powered %}
 <!--
   <div class="powered-by">{#
   #}{{ __('footer.powered', '<a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a>') }}{#
