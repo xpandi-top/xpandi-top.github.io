@@ -46,7 +46,7 @@ page:
   tags: 标签
 
 footer:
-  powered: "AA%sBB"
+  powered: "%s"
   theme: 博客
 
 counter:
