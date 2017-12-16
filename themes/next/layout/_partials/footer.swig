@@ -26,6 +26,8 @@
   {% endif %}
 </div>
 
+{ #
+
 {% if theme.footer.powered %}
 
   <div class="powered-by">{#
@@ -46,6 +48,8 @@
   {% if theme.footer.theme.version %} v{{ theme.version }}{% endif %}{#
 #}</div>
 {% endif %}
+
+# }
 
 {% if theme.footer.custom_text %}
   <div class="footer-custom">{#
