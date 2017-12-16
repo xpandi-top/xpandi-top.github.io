@@ -30,9 +30,9 @@
 
 {% if theme.footer.powered %}
 
-  <div class="powered-by">{#
-  #}{{ __('footer.powered', '') }}{#
-#}</div>
+  <div class="powered-by">
+    {{ __('footer.powered', '') }}
+  </div>
 
 {% endif %}
 
@@ -42,11 +42,10 @@
 
 {% if theme.footer.theme.enable %}
 
-  <div class="theme-info">{#
-  #}{{ __('footer.theme') }} &mdash; {#
-  #}
-  {% if theme.footer.theme.version %} v{{ theme.version }}{% endif %}{#
-#}</div>
+  <div class="theme-info">
+    {{ __('footer.theme') }} &mdash;
+    {% if theme.footer.theme.version %} v{{ theme.version }}{% endif %}
+  </div>
 {% endif %}
 
 # }
