@@ -17,21 +17,22 @@ tags: [桌游, 昆虫棋, 规则]
 - ### 名词解释
 
 -   蜂巢：
-    任意时刻，桌面上双方的所有的棋子构成了当前的蜂巢。蜂巢是唯一的，并且任何玩家不能在任何时候使之分裂。分裂指的是蜂巢变为两个独立的不相邻的部分的过程。
+    任意时刻，桌面上双方的所有的棋子构成了当前的蜂巢。蜂巢是唯一的，并且任何玩家不能在任何时候使之分裂。分裂指的是蜂巢变为两个独立的不相邻的部分的过程。当一枚棋子处在其他棋子上方的时候，统称其在蜂巢上方。
 
 - ### 游戏准备
 
-两名玩家分别选择自己的颜色（黑或白），然后将本方的蜂后和11枚其他棋子面朝上放在面前。
+两名玩家选择自己的颜色（黑或白），然后将本方的蜂后和11枚其他棋子面朝上放在面前。
 
 - ### 开始游戏
 
-第一回合由白色方先开始。白色方首先在桌子上放置一枚棋子，然后对方在任意邻边放置一枚棋子，这两枚棋子构成了本局中蜂巢的中心。其他棋子会围绕这两枚棋子放置，使得蜂巢不断扩大。随着游戏的进行，蜂巢的形状可能会不断变化。
+第一回合由白色方先开始。白色方首先在桌子上放置一枚棋子，然后对方放置一枚棋子与之相邻，这两枚相邻的棋子构成了本局中蜂巢的中心。其他棋子会围绕这两枚棋子放置，使得蜂巢不断扩大。随着游戏的进行，蜂巢的形状可能会不断变化。
 
 随后的回合中，双方轮流采取以下行动之一：要么放置一枚新的棋子，要么让一枚已有的棋子进行行动(必须在蜂后放置后)。一名玩家不能主动放弃自己的回合，在可能的情况下他必须放置棋子或进行行动。但是，如果一名玩家不被允许做任何一种操作，则他的回合将自动跳过，直到他可以合理地执行一种操作。
 
 - #### 放置
 
 棋子必须正面向上放置，新放置的棋子必须与至少一枚自己的棋子有相邻的边，同时**不得**与对方的棋子有相邻的边。新放置的棋子与原有的蜂巢构成了新的蜂巢。
+当棋子发生叠置时，该位置的颜色以最上面一个棋子的颜色计算。
 
 蜂后必须在**第二、三或四回合**被放入蜂巢。
 
@@ -40,8 +41,10 @@ tags: [桌游, 昆虫棋, 规则]
 棋子在行动时，须遵循棋子自身的行动规则和以下的基本规则：
 
 -    必须在已经放置蜂后之后，玩家才可以进行行动。
--    棋子在行动时不必理会相邻棋子的颜色，即只要留在蜂巢中，就算合法
--    棋子离开原位置，到进入新位置的过程不得引起蜂巢的分裂。如图：
+-    棋子在行动时不必理会相邻棋子的颜色，即只要留在蜂巢中，就算合法。
+-    若棋子在上一回合被对手移动过，则其不能移动。
+-    若棋子上方有其他棋子，则该棋子不能移动。
+-    任何时候，棋子离开原位置，到进入新位置的过程不得引起蜂巢的分裂。
 
 行动过程包括三种可能的动作：
 
@@ -59,47 +62,69 @@ tags: [桌游, 昆虫棋, 规则]
 
 - ### 特殊能力
 
-- 蜂后 QUEEN
-    + 无能力，只能移动一步
-- 蜘蛛 SPIDER
-    + 必须移动恰好三步
-    + 移动过程中不能往返
-- 蚂蚁 ANT
-    + 可以移动任意多步，即可以停在桌面上任意位置
-- 甲虫 BEETLE
-    + 可以移动一步或攀爬一步，但只能选择其一
-    + 当甲虫在其他棋子上方时，甲虫可以爬下来
-    + 当甲虫在一枚棋子上方的时候，可以阻止下方的棋子行动
-    + 甲虫可以攀爬到一叠棋子的最上方，阻止下方所有棋子行动
-- 蟋蟀 GRASSHOPPER
-    + 可以跳跃一次
-- 蚊子 NOSQUITO
-    + 复制其紧邻的任意棋子的能力
-    + 如果只与蚊子相邻，则不能移动
-- 瓢虫 LADYBUG
-    + 瓢虫必须移动恰好三步，其中两步在其他棋子上方，最后一步回到桌面
-- 潮虫 PILLBUG
-    + 可以移动一步，或者执行以下移动
-    + 潮虫让紧邻自己的一枚棋子攀爬到自己上方，再使其落下到自己身旁其他位置
+- 蜂后 QUEEN x1
+    + 蜂后无能力，只能移动一步。
+- 蜘蛛 SPIDER x2
+    + 蜘蛛必须移动恰好三步。
+    + 蜘蛛移动过程中不能往返。
+- 蚂蚁 ANT x3
+    + 蚂蚁可以移动任意多步，即可以停在桌面上任意位置。
+- 甲虫 BEETLE x2
+    + 甲虫一次只能移动一步。
+    + 在桌面上，甲虫可以移动或攀爬到其他棋子上方。
+    + 当甲虫在其他棋子上方时，甲虫在蜂巢上移动，或者爬下来。
+    + 当甲虫在一枚棋子上方的时候，可以阻止下方的棋子行动。
+    + 甲虫可以攀爬到另一枚甲虫上方，阻止下方所有棋子行动。
+- 蟋蟀 GRASSHOPPER x3
+    + 蟋蟀行动的方式是跳跃一次。
+- 蚊子 NOSQUITO x1
+    + 蚊子可以复制其紧邻的任意棋子的能力。
+    + 如果蚊子与一摞棋子相邻，则其可以复制最上面的一个棋子的能力。
+    + 如果蚊子只与其他的蚊子相邻，则不能移动。
+- 瓢虫 LADYBUG x1
+    + 瓢虫必须移动恰好三步，其中第一步移动到相邻某棋子上方，然后在蜂巢上移动一步，最后一步回到桌面。
+    + 换句话说，瓢虫的移动起始于桌面，终止于桌面，而途中瓢虫不得接触桌面。
+- 潮虫 PILLBUG x1
+    + 潮虫可以移动一步，或者执行以下移动。
+    + 潮虫让紧邻自己的一枚棋子攀爬到自己上方，再使其落下到自己身旁其他位置。
+    + 潮虫不能对叠置的棋子中的任何一个使用其能力。
 
 - ### 扩充包
 - #### 额外的新角色
 - 螳螂 MANTLS
-    + When starting its turn on ground level, the Mantis cannot move. However, the Mantis can grab an adjacent bug, moving the bug underneath the Mantis. It can only grab a piece if there is a shared unoccupied space adjacent to both of them and if moving the piece would not split the Hive. On the Hive, the Mantis moves like a Beetle. The Mantis is on the same tile as the Beetle
+    + 若螳螂在桌面上，则它无法移动，但它可以让自己身边的另一枚棋子移动到自己下方。
+    + 若螳螂在蜂巢上方，它可以像甲虫一样移动。
+    + 螳螂和甲虫在同一枚棋子的正反两面，游戏开始前玩家决定使用哪一角色。
 - 苍蝇 
-    + The Fly moves one space around the Hive if it has the freedom to do so. If the Fly does not have the freedom to move, and if removing the Fly would not break the one Hive rule, the Fly may fly to any unoccupied space on the ground level. The Fly is on the same tile as the Grasshopper
+    + 如果苍蝇可以移动，未被阻隔，则苍蝇可以如常移动一步。
+    + 如果苍蝇的移动被阻隔，同时移除苍蝇不会造成蜂巢的分裂，则苍蝇可以飞到任何一个未被占据的空间。
+    + 苍蝇和蟋蟀在同一枚棋子的正反两面，游戏开始时玩家决定使用哪一角色。
 - 蝎子
-    + The Scorpion moves exactly three spaces along the hive, similar to the spider. No piece is allowed to move on top of, jump over, or move, the Scorpion, even if momentarily during their movement. The Mosquito does not copy this ability. The Scorpion is on the same tile as the Spider.
-- 蚂蜂
-    + The Wasp can fly to any unoccupied space provided that the space only touches the opponent's pieces (or stacks where an opponent's piece is on top). The Wasp can move into and out of surrounded spaces. It is still placed normally and can have pieces of the same colour adjacent to it so long as the Wasp itself is not moved adjacent to a piece or stack of the same colour. The Wasp is on the same tile as the Ant.
+    + 蝎子在蜂巢边缘移动恰好三步，如蜘蛛一样。
+    + 在任何时候，任何棋子都不可以棋子可以移动到蝎子上方，活着跳过蝎子，或者使蝎子移动。
+    + 蚊子不能复制上述特殊能力，但可以复制蝎子的移动能力。
+    + 蝎子和蜘蛛在同一枚棋子的正反两面，游戏开始前玩家决定使用哪一角色。
+- 马蜂
+    + 马蜂可以飞到一个未被占据的位置，如果目标位置只与对方的棋子（或者最上是对方棋子的一摞棋子）相邻。马蜂可以移出或移入被包围的空间。
+    + 马蜂可以与本方棋子相邻，只要这样的相邻不是由马蜂自己的移动造成的。
+    + 马蜂和蚂蚁在同一枚棋子的正反两面，游戏开始时玩家决定使用哪一角色。
 - 蟑螂
-    + The Cockroach moves like the Ladybug, first on top of the Hive, and then one space down to ground level. The Cockroach must move onto the Hive as its first movement, and must move onto ground level for its final movement, however, its total movement on the hive is not restricted, except that it cannot move over pieces belonging to the opponent. The Cockroach is on the same tile as the Ladybug.
+    + 行动时，蟑螂的第一步必须爬到蜂巢上方，同时最后一步必须落下，停留在桌面上。
+    + 在蜂巢上方的时候，蟑螂可以移动任意多步，只受一条限制：蟑螂不能跨过对方的棋子。
+    + 蟑螂的瓢虫在同一枚棋子的正反两面，游戏开始时玩家的决定使用哪一角色。
 - 蜻蜓
-    + The Dragonfly moves one space forward, and then one space forward- left or forward-right. It may move onto and land on top of the Hive. If the Dragonfly starts its turn on top the hive and moves to an unoccupied space, it carries with it the piece it is on top of, provided that moving the piece would not break the one Hive rule. It cannot move another Dragonfly. The Dragonfly is on the same tile as the Mosquito.
+    + 蜻蜓每次向前一步，然后向左前或者右前走一步。（类比象棋里面的马）
+    + 蜻蜓可以爬上蜂巢，并且停留在蜂巢上面。
+    + 如果一只蜻蜓开始移动时处在蜂巢上面，并且向一个未被占据的空间移动，则其可携带其下方的棋子一起移动，只要该行为不会引起蜂巢分裂。
+    + 蜻蜓不可以移动另一只蜻蜓。
+    + 蜻蜓和蚊子处在同一棋子的正反两面，游戏开始时玩家决定使用哪一角色。
 - 蜈蚣
-    + The Centipede either moves one space or switches positions with an adjacent bug. It can only switch places with a piece if there is a shared unoccupied space adjacent to both of them. It cannot switch places with a piece under a stack, or if the centipede itself is under a stack. The Centipede may not switch places with another Centipede or a Pill Bug. The Centipede is on the same tile as the Pill Bug.
+    + 蜈蚣可以在桌面上移动一步，或者与一个相邻棋子交换位置。
+    + 只有在蜈蚣与一枚相邻棋子都与一个共同的空地相邻时，才可以进行交换。
+    + 蜈蚣不可与蜈蚣或潮虫或上方有棋子的棋子交换位置，蜈蚣上方有棋子时不可交换位置。
+    + 蜈蚣与潮虫在同一枚棋子的正反两面，游戏开始前玩家决定使用哪一角色。
 - ### 进行进阶游戏
 
-除了蜂后之外的每个棋子都是双面的。两面的昆虫不同，不会同时参与游戏。
+除了蜂后之外的每个棋子都是双面的。开始游戏时，每人选择一个蜂后，然后从剩下的11枚棋子中选出自己想要的角色。游戏过程中不要将棋子翻面。
 
-开始游戏时，每人选择一个蜂后，然后从剩下的11枚棋子中选出自己想要的角色。
+- ### FAQ
