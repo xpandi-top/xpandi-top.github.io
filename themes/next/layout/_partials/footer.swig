@@ -19,11 +19,10 @@
     <span title="{{ __('post.totalcount') }}">{#
     #}{{ totalcount(site, '0,0.0a') }}{#
   #}</span>
-  <div class="powered-by">
-    <i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+  <i class="fa fa-user-md"></i>
+  <span id="busuanzi_container_site_uv">
       本站访客数:<span id="busuanzi_value_site_pv"></span>
     </span>
-  </div>
   {% endif %}
 </div>
 
@@ -43,7 +42,7 @@
 
   <div class="theme-info">{#
   #}{{ __('footer.theme') }} &mdash; {#
-  #}TEST TEXT
+  #}
   {% if theme.footer.theme.version %} v{{ theme.version }}{% endif %}{#
 #}</div>
 {% endif %}
