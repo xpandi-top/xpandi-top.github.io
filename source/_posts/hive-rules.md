@@ -1,6 +1,7 @@
 ---
 title: 昆虫棋（HIVE）中文规则
 date: 2017-12-14 23:38:35
+author: Pan
 categories: 桌游小课堂
 tags: [桌游, 昆虫棋, 规则]
 ---
