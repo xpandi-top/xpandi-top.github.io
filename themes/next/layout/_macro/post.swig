@@ -315,11 +315,7 @@
     {### END POST BODY ###}
     {#####################}
 
-      {% if not is_index %}
-        <div>
-          {% include 'my-copyright.swig' %}
-        </div>
-      {% endif %}
+
     {% if theme.wechat_subscriber.enabled and not is_index %}
       <div>
         {% include 'wechat-subscriber.swig' %}
@@ -339,6 +335,8 @@
     {% endif %}
 
     <footer class="post-footer">
+
+
       {% if post.tags and post.tags.length and not is_index %}
         <div class="post-tags">
           {% for tag in post.tags %}

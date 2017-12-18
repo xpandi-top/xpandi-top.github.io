@@ -1,9 +1,10 @@
 ---
 title: Github Pages 博客搭建
 date: 2017-12-09 18:01:12
+author: Pan
 categories: 技术
 tags: [博客, hexo, git]
-author: 黑黑
+copyright: true
 ---
 ## 搭建github 博客的步骤：
 
