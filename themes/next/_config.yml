@@ -126,6 +126,7 @@ social:
   #Instagram: https://instagram.com/yourname || instagram
   #Skype: skype:yourname?call|chat || skype
   Weibo: https://weibo.com/u/3182500054 || weibo
+  Wechat: https://wx.qq.com || wechat
 
 social_icons:
   enable: true
