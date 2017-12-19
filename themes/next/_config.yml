@@ -209,8 +209,8 @@ auto_excerpt:
 # Post meta display settings
 post_meta:
   item_text: true
-  created_at: true
-  updated_at: false
+  created_at: false
+  updated_at: true
   categories: true
 
 # Post wordcount display settings
