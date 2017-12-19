@@ -81,7 +81,7 @@ index_with_subtitle: false
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, question icon will be loaded.
 menu:
   home: / || home
-  about: /about/ || user
+  about: /about/ || user-circle
   tags: /tags/ || tags
   categories: /categories/ || th
   archives: /archives/ || archive
@@ -125,7 +125,7 @@ social:
   #YouTube: https://youtube.com/yourname || youtube
   #Instagram: https://instagram.com/yourname || instagram
   #Skype: skype:yourname?call|chat || skype
-  Weibo: https://www.sina.com || 
+  # Weibo: https://www.sina.com || weibo
 
 social_icons:
   enable: true
@@ -179,7 +179,7 @@ sidebar:
   offset: 12
 
   # Back to top in sidebar (only for Pisces | Gemini).
-  b2t: true
+  b2t: false
 
   # Scroll percent label in b2t button.
   scrollpercent: true
@@ -222,6 +222,7 @@ post_wordcount:
   min2read: false
   totalcount: true
   separated_meta: false
+  # if true, word count would show in next line
 
 # Wechat Subscriber
 #wechat_subscriber:
@@ -424,10 +425,10 @@ valine:
 # Make duoshuo show UA
 # user_id must NOT be null when admin_enable is true!
 # you can visit http://dev.duoshuo.com get duoshuo user id.
-duoshuo_info:
-  ua_enable: true
-  admin_enable: false
-  user_id: 0
+# duoshuo_info:
+#   ua_enable: false
+#   admin_enable: false
+#   user_id: 0
   #admin_nickname: Author
 
 # Post widgets & FB/VK comments settings.
