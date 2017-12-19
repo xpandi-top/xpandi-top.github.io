@@ -36,7 +36,7 @@ footer:
   since: 2017
 
   # Icon between year and copyright info.
-  icon: user
+  icon: heart
 
   # If not defined, will be used `author` from Hexo main config.
   copyright:
@@ -129,7 +129,7 @@ social:
 
 social_icons:
   enable: true
-  icons_only: false
+  icons_only: true
   transition: false
 
 # Blog rolls
@@ -172,11 +172,11 @@ sidebar:
   #  - remove  Totally remove sidebar including sidebar toggle.
   display: post
   #display: always
-  #display: hide
-  #display: remove
+  # display: hide
+  # display: remove
 
   # Sidebar offset from top menubar in pixels (only for Pisces | Gemini).
-  offset: 12
+  offset: 20
 
   # Back to top in sidebar (only for Pisces | Gemini).
   b2t: false
@@ -209,7 +209,7 @@ auto_excerpt:
 
 # Post meta display settings
 post_meta:
-  item_text: true
+  item_text: false
   created_at: false
   updated_at: true
   categories: true
@@ -217,7 +217,7 @@ post_meta:
 # Post wordcount display settings
 # Dependencies: https://github.com/willin/hexo-wordcount
 post_wordcount:
-  item_text: true
+  item_text: false
   wordcount: true
   min2read: false
   totalcount: true
@@ -463,8 +463,8 @@ vkontakte_api:
 # Star rating support to each article.
 # To get your ID visit https://widgetpack.com
 rating:
-  enable: false
-  id:     #<app_id>
+  enable: true
+  id:     8611
   color:  fc6423
 # ---------------------------------------------------------------
 
@@ -482,16 +482,16 @@ busuanzi_count:
   enable: true
   # custom uv span for the whole site
   site_uv: true
-  site_uv_header: <i class="fa fa-user"></i>总访客
-  site_uv_footer: 位
+  site_uv_header: <i class="fa fa-user"></i>
+  site_uv_footer:
   # custom pv span for the whole site
   site_pv: true
-  site_pv_header: <i class="fa fa-eye"></i>总点击
-  site_pv_footer: 次
+  site_pv_header: <i class="fa fa-hand-o-up"></i>
+  site_pv_footer:
   # custom pv span for one page only
   page_pv: true
-  page_pv_header: <i class="fa fa-file-o"></i>本页面阅读
-  page_pv_footer: 次
+  page_pv_header: <i class="fa fa-eye"></i>
+  page_pv_footer:
 
 
 # Tencent analytics ID
