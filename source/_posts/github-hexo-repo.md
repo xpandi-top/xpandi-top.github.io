@@ -6,6 +6,8 @@ categories: 技术
 tags: [博客, hexo, git]
 copyright: true
 ---
+把自己折腾博客的过程贴上来吧。
+<!-- more -->
 ## 搭建github 博客的步骤：
 
 #### 在本地：
