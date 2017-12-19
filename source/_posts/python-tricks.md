@@ -1,5 +1,5 @@
 ---
-title: [持续更新]python小技巧合辑
+title: python小技巧合辑
 copyright: true
 comments: true
 date: 2017-12-19 10:10:52
