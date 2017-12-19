@@ -130,7 +130,7 @@ social:
 social_icons:
   enable: true
   icons_only: true
-  transition: false
+  transition: true
 
 # Blog rolls
 #links_title: Links
