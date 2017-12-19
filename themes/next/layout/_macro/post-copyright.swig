@@ -3,6 +3,10 @@
     <strong>{{ __('post.copyright.author') + __('symbol.colon') }}</strong>
     {{ post.author | default(config.author) }}
   </li>
+  <li class="post-copyright-date">
+    <strong>{{ __('post.copyright.date') + __('symbol.colon') }}</strong>
+    {{ post.date }}
+  </li>
   <li class="post-copyright-link">
     <strong>{{ __('post.copyright.link') + __('symbol.colon') }}</strong>
     <a href="{{ post.url | default(post.permalink) }}" title="{{ post.title }}">{{ post.url | default(post.permalink) }}</a>
