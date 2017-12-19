@@ -125,8 +125,8 @@ social:
   #YouTube: https://youtube.com/yourname || youtube
   #Instagram: https://instagram.com/yourname || instagram
   #Skype: skype:yourname?call|chat || skype
-  Weibo: https://weibo.com/u/3182500054 || weibo
-  WechatPlatform: https://wx.qq.com || wechat
+  新浪微博: https://weibo.com/u/3182500054 || weibo
+  微信公众号: http://p15ezcjt2.bkt.clouddn.com/qrcode/wechat_platformqrcode_for_gh_a4a268acb731_258.jpg || wechat
 
 social_icons:
   enable: true
