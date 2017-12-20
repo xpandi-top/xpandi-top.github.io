@@ -396,7 +396,6 @@ valine:
 # And you can find the use guide at official webiste: http://www.jiathis.com/.
 # Warning: JiaThis does not support https.
 jiathis:
-  # enable: true
   uid: 2152088
 #add_this_id:
 
