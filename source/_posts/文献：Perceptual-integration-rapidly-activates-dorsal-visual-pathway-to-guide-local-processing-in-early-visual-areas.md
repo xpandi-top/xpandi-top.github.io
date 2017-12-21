@@ -5,7 +5,7 @@ comments: true
 date: 2017-12-21 14:59:51
 author: Di
 categories: 文献
-tags:[整体知觉]
+tags: [整体知觉]
 ---
 在知觉整合过程中，dorsal快速激活，并且指导后续的EVA中的局部信息。
 <!-- more -->
