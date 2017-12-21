@@ -2,8 +2,8 @@
 title: Perceptual integration rapidly activates dorsal visual pathway to guide local processing in early visual areas
 copyright: true
 comments: true
-author：Di
 date: 2017-12-21 14:59:51
+author：Di
 categories: 文献
 tags:[整体知觉]
 ---
