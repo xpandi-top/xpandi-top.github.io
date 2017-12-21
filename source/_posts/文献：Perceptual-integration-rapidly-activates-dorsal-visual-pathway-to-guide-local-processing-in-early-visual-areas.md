@@ -3,7 +3,7 @@ title: Perceptual integration rapidly activates dorsal visual pathway to guide l
 copyright: true
 comments: true
 date: 2017-12-21 14:59:51
-author：Di
+author: Di
 categories: 文献
 tags:[整体知觉]
 ---
