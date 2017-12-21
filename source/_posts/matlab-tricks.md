@@ -25,7 +25,7 @@ yy = smooth(y,'sgolay',degree)
 yy = smooth(y,span,'sgolay',degree)
 yy = smooth(x,y,...)
 gpuarrayYY = smooth(gpuarrayY)
-``` 
+```
 
 smooth 当中默认的平滑参数是5步，普通的滑动平均
 具体而言
