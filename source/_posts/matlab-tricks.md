@@ -6,12 +6,16 @@ date: 2017-12-21 15:33:43
 categories: 技术
 tags: [matlab]
 ---
-不时更新一下自己平时用到，或者发现到了一些matlab的小技巧和小trick,汇总以备查阅吧。
+matlab小技巧，其实也不是小技巧，就是一些笔记吧。。。或者说吐槽。。。废话好多。。。
 <!-- more -->
 ----------
+
 ### smooth
+
 平滑数据
+
 #### 用法
+
 ``` matlab
 yy = smooth(y)
 yy = smooth(y,span) % span 一定要是奇数，如果span设置为奇数，那么会自动减1
