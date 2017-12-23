@@ -1,5 +1,5 @@
 ---
-title: 关于我
+title: 关于我们
 date: 2017-12-18 13:39:13
 type: about
 comments: false
