@@ -46,6 +46,15 @@
               {{ list_categories() }}
             </div>
           </div>
+        {% elif page.type === 'mylinux' %}
+          <div class="category-all-page">
+            <div class="category-all-title">
+                {{ _p('counter.categories', site.categories.length) }}
+            </div>
+            <div class="category-all">
+              {{ list_categories() }}
+            </div>
+          </div>
         {% else %}
           {{ page.content }}
         {% endif %}
