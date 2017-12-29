@@ -47,7 +47,7 @@ activate python2
 如果需要取消激活环境，则输入
 
 ``` 
-activate python2
+deactivate python2
 ```
 
 ### 安装其他工具包
