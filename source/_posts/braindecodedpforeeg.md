@@ -7,6 +7,8 @@ categories: 机器学习
 tags:[python, braindecode, eeg]
 ---
 最近在看braindecode的github文档，简单地做一下笔记记录，如果有需要可以随时查看
+
+pytorch官网没有windows的安装方式，所以为了之后省事，所以改用ubuntu
 <!--more-->
 
 文档链接
@@ -22,21 +24,16 @@ https://robintibor.github.io/braindecode/index.html
 
 - numpy
 
-anaconda默认有numpy，如果没有就装一下好了
+conda装numpy，如果没有就装一下好了
 
 - mne
+
+脑电处理的python工具包
 
 - pytorch
 
 pytorch官网http://pytorch.org/选择需要的安装包，下载，在conda下安装(在windows下装好像还很麻烦。。。)
 
-比如：
-
-``` 
-conda install
-```
-
-
 - braindecode
 
-### 未完待续。
+### 未完待续
