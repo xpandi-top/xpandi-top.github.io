@@ -11,8 +11,7 @@ tags:[python, braindecode, eeg]
 pytorch官网没有windows的安装方式，所以为了之后省事，所以改用ubuntu
 <!--more-->
 
-文档链接
-https://robintibor.github.io/braindecode/index.html
+[文档链接](https://robintibor.github.io/braindecode/index.html)
 
 ### 必要的环境安装
 
