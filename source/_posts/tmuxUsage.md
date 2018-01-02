@@ -1,5 +1,5 @@
 ---
-title: tmuxUsage
+title: tmux使用
 copyright: true
 comments: true
 date: 2017-12-29 08:15:15
@@ -50,7 +50,7 @@ tm [id]
 
 ##### 窗口
 Option|cmd/shortkey
-|-------
+|-------|
 new |bind-key c
 rename|  bind-key ,
 index  | bind-key [1,2,…]
@@ -61,7 +61,7 @@ kill   | bind-key x
 
 ##### 面板
 Option |cmd/shortkey
-|------
+|------|
 split(horizontal) | bind-key %
 split(vertical)    |bind-key “
 switch  |bind-key ↑ ↓ ← →
