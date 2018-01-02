@@ -42,7 +42,11 @@ tm [id]
 
 将进入名为 id 的session，若session id不存在，则创建。
 
-### 快捷键
+在集群中多人使用，每人开不同的session。需要多窗口开多个window或panel即可。
+
+##### 常用操作
+
+### 详细快捷键
 
 ##### 窗口
 Option|cmd/shortkey
@@ -53,6 +57,7 @@ index  | bind-key [1,2,…]
 next    |bind-key n
 previous |   bind-key p
 kill   | bind-key x
+
 
 ##### 面板
 Option |cmd/shortkey
@@ -65,4 +70,6 @@ mini screen |bind-key z
 scroll mode |bind-key [
 quit scroll mode |   q
 kill   | bind-key x
+
+### 自定义设置
 
