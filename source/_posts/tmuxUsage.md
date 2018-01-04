@@ -26,9 +26,9 @@ brew install tmux
 
 ### 基本信息
 
-tmux的界面包括会话session，窗口window，面板panel。每次开启tmux，即自动创建了session 1 的window 1。
+tmux的界面包括会话session，窗口window，面板panel。每次开启tmux，即自动创建了session 1 的 window 1。
 
-bind-key：为防止快捷键与系统快捷键混淆，tmux提供了快捷键前缀。每次先按下快捷键前缀，再按下相应快捷键，默认快捷键为control-b（mac下⌃b）。
+bind-key：为防止快捷键与系统快捷键混淆，tmux提供了快捷键前缀。每次先按下快捷键前缀，再按下相应快捷键，默认快捷键为control-b（⌃b for mac）。
 
 ### 使用
 
@@ -50,24 +50,24 @@ tm [id]
 
 ##### 窗口
 Option|cmd/shortkey
-|-------|
-new |bind-key c
+-------|
+new | bind-key c
 rename|  bind-key ,
 index  | bind-key [1,2,…]
-next    |bind-key n
+next    | bind-key n
 previous |   bind-key p
 kill   | bind-key x
 
 
 ##### 面板
-Option |cmd/shortkey
-|------|
+Option | cmd/shortkey
+------|
 split(horizontal) | bind-key %
-split(vertical)    |bind-key “
-switch  |bind-key ↑ ↓ ← →
-full screen |bind-key z
-mini screen |bind-key z
-scroll mode |bind-key [
+split(vertical)    | bind-key “
+switch  | bind-key ↑ ↓ ← →
+full screen | bind-key z
+mini screen | bind-key z
+scroll mode | bind-key [
 quit scroll mode |   q
 kill   | bind-key x
 
