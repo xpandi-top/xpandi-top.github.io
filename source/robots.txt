@@ -9,4 +9,4 @@ Disallow: /css/
 Disallow: /fonts/
 Disallow: /fancybox/
 
-Sitemap: http(s)://www.xpandi.top/sitemap.xml
+Sitemap: http://www.xpandi.top/sitemap.xml
