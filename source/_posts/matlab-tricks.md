@@ -2,9 +2,11 @@
 title: matlab-tricks
 copyright: true
 comments: true
-date: 2017-12-21 15:33:43
 categories: 技术
-tags: [matlab]
+tags:
+  - matlab
+abbrlink: 57dbd055
+date: 2017-12-21 15:33:43
 ---
 matlab小技巧，其实也不是小技巧，就是一些笔记吧。。。或者说吐槽。。。废话好多。。。
 <!-- more -->

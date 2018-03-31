@@ -88,7 +88,7 @@ menu:
   categories: /categories/ || th
   tags: /tags/ || tags
   #schedule: /schedule/ || calendar
-  #sitemap: /sitemap.xml || sitemap
+  sitemap: /sitemap.xml || sitemap
   #commonweal: /404/ || heartbeat
   # archives: /archives/ || archive
 

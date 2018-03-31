@@ -1,10 +1,14 @@
 ---
 title: Github Pages 博客搭建
-date: 2017-12-09 18:01:12
 author: Pan
 categories: 技术
-tags: [博客, hexo, git]
+tags:
+  - 博客
+  - hexo
+  - git
 copyright: true
+abbrlink: f491b9ba
+date: 2017-12-09 18:01:12
 ---
 把自己折腾博客的过程贴上来吧。
 <!-- more -->

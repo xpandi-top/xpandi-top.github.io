@@ -2,9 +2,12 @@
 title: python屏幕截图与鼠标操作
 copyright: true
 comments: true
-date: 2017-12-27 21:29:38
 categories: python
-tags: [python, 截图]
+tags:
+  - python
+  - 截图
+abbrlink: 5deff486
+date: 2017-12-27 21:29:38
 ---
 python截图解决方案
 windows下需要pywin32

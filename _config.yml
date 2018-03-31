@@ -14,7 +14,7 @@ timezone: Asia/Shanghai
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://www.xpandi.top
 root: /
-permalink: :year/:month/:day/:title/
+permalink: posts/:abbrlink/
 permalink_defaults:
 
 # Directory
@@ -76,6 +76,23 @@ pagination_dir: page
 # theme: chan
 theme: next
 # theme: aloha
+
+# abbrlink config
+abbrlink:
+  alg: crc32  #support crc16(default) and crc32
+  rep: hex    #support dec(default) and hex
+
+# sitemap config
+sitemap:
+    path: sitemap.xml
+    # template: ./sitemap_template.xml
+
+# Nofollow Config
+nofollow:
+  enable: true
+  # exclude: # 例外的链接，可将友情链接放置此处，请同时去掉注释
+    # - exclude1.com
+    # - exclude2.com
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

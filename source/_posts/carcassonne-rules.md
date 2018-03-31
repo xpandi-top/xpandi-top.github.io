@@ -2,10 +2,14 @@
 title: 卡卡颂中文规则
 copyright: true
 comments: true
-date: 2017-12-19 00:14:58
 categories: 桌游小课堂
-tags: [桌游, 规则, 卡卡颂]
+tags:
+  - 桌游
+  - 规则
+  - 卡卡颂
 author: Pan
+abbrlink: 4ea8f927
+date: 2017-12-19 00:14:58
 ---
 v1.1 增加高塔
 v1.0 基础版规则&河流

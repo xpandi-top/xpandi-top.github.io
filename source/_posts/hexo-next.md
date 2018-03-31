@@ -2,11 +2,13 @@
 title: Hexo的NexT主题优化
 copyright: true
 comments: true
+categories:
+  - 技术
+  - hexo
+tags:
+  - hexo
+abbrlink: d4772490
 date: 2017-12-24 20:27:33
-categories: 
-    - 技术
-    - hexo
-tags: [hexo]
 ---
 记一下自己折腾hexo时候做的事情吧。也方便各位参考。
 <!--more-->

@@ -1,11 +1,15 @@
 ---
-title: Perceptual integration rapidly activates dorsal visual pathway to guide local processing in early visual areas
+title: >-
+  Perceptual integration rapidly activates dorsal visual pathway to guide local
+  processing in early visual areas
 copyright: true
 comments: true
-date: 2017-12-21 14:59:51
 author: Di
 categories: 文献
-tags: [整体知觉]
+tags:
+  - 整体知觉
+abbrlink: e939781d
+date: 2017-12-21 14:59:51
 ---
 在知觉整合过程中，dorsal快速激活，并且指导后续的EVA中的局部信息。
 <!-- more -->

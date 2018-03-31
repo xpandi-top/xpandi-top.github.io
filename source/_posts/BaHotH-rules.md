@@ -1,10 +1,14 @@
 ---
 title: 山屋惊魂中文规则
-date: 2017-12-13 15:24:48
 author: Pan
 categories: 桌游小课堂
-tags: [桌游, 小黑屋, 规则]
+tags:
+  - 桌游
+  - 小黑屋
+  - 规则
 copyright: true
+abbrlink: f96f39db
+date: 2017-12-13 15:24:48
 ---
 最近入坑小黑屋，草草整理一下规则放在这里，方便查阅，有时间的时候补充。
 <!-- more -->

@@ -1,10 +1,14 @@
 ---
 title: 昆虫棋中文规则
-date: 2017-12-14 23:38:35
 author: Pan
 categories: 桌游小课堂
-tags: [桌游, 昆虫棋, 规则]
+tags:
+  - 桌游
+  - 昆虫棋
+  - 规则
 cpoyright: true
+abbrlink: bf131ed7
+date: 2017-12-14 23:38:35
 ---
 最近在淘宝上入了一盒hive，无奈中文的说明书实在是看不懂，于是只好找英文原版的自己翻译一份了。
 

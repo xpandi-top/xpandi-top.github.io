@@ -2,9 +2,12 @@
 title: python小技巧合辑
 copyright: true
 comments: true
-date: 2017-12-19 10:10:52
 categories: python
-tags: [python, 技巧]
+tags:
+  - python
+  - 技巧
+abbrlink: 1c0e2abb
+date: 2017-12-19 10:10:52
 ---
 总结一下自己平时用到，或者发现到了一些python的小技巧和小trick。
 <!-- more -->

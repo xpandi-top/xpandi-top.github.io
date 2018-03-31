@@ -11,6 +11,8 @@
     "gulp-htmlclean": "^2.7.16",
     "gulp-htmlmin": "^3.0.0",
     "hexo": "^3.4.4",
+    "hexo-abbrlink": "^2.0.5",
+    "hexo-autonofollow": "^1.0.1",
     "hexo-deployer-git": "^0.3.1",
     "hexo-filter-github-emojis": "^1.4.3",
     "hexo-footnotes": "^1.0.2",

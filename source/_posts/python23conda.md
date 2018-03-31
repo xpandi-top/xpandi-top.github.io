@@ -2,10 +2,12 @@
 title: windows系统anaconda中python2与python3共存
 copyright: true
 comments: true
-date: 2017-12-30 00:09:13
 categories: python
-tags: [anaconda]
+tags:
+  - anaconda
 author: Di
+abbrlink: b5a05a6e
+date: 2017-12-30 00:09:13
 ---
 找python中使用的心理学工具包时，比如MNE，只能在python2中使用，
 

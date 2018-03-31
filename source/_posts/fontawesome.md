@@ -2,10 +2,11 @@
 title: 图标库fontawesome
 copyright: true
 comments: true
-date: 2017-12-23 17:51:46
 categories:
-    - 技术
-    - 资源
+  - 技术
+  - 资源
+abbrlink: e33c66fa
+date: 2017-12-23 17:51:46
 tags:
 ---
 http://fontawesome.io

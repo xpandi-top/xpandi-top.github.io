@@ -2,10 +2,12 @@
 title: 2017秋日剧推荐
 copyright: true
 comments: true
-date: 2017-12-23 00:10:01
 categories: 影视
-tags: [日剧]
+tags:
+  - 日剧
 author: Di
+abbrlink: 9800a1d5
+date: 2017-12-23 00:10:01
 ---
 2017年，这一年看了三部日剧，觉得很有意思。在这里推荐一下；
 

@@ -2,9 +2,12 @@
 title: tmux使用
 copyright: true
 comments: true
-date: 2017-12-29 08:15:15
 categories: 技术
-tags: [tmux, 终端]
+tags:
+  - tmux
+  - 终端
+abbrlink: cb2d43c3
+date: 2017-12-29 08:15:15
 ---
 自己在集群上需要用到tmux，把自己最近的使用心得总结一下。
 <!--more-->

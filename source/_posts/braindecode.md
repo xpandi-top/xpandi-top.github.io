@@ -2,9 +2,13 @@
 title: Deep leaning处理EEG数据-braindecode工具箱
 copyright: true
 comments: true
-date: 2017-12-31 01:48:03
 categories: 机器学习
-tags: [python, braindecode, eeg]
+tags:
+  - python
+  - braindecode
+  - eeg
+abbrlink: c786e694
+date: 2017-12-31 01:48:03
 ---
 最近在看braindecode的github文档，简单地做一下笔记记录，如果有需要可以随时查看
 
