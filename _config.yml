@@ -74,8 +74,8 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 # theme: yilia
 # theme: chan
-theme: next
-# theme: aloha
+# theme: next
+theme: Claudia
 
 # abbrlink config
 abbrlink:
