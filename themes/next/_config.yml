@@ -82,7 +82,7 @@ index_with_subtitle: false
 menu:
   home: / || home
   about: /about/ || user-circle
-  # linuxmenu: /linux/ || linux
+  linuxmenu: /categories/linux/ || linux
   python: /categories/python/ || linux
   boardgame: /categories/桌游小课堂/ || gamepad
   categories: /categories/ || th
