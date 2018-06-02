@@ -2,9 +2,12 @@
 title: 2017秋日剧推荐
 copyright: true
 comments: true
-categories: 影视
+categories:
+  - 娱乐
+  - 影视
 tags:
   - 日剧
+  - 2017秋
 author: Di
 abbrlink: 9800a1d5
 date: 2017-12-23 00:10:01

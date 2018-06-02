@@ -2,10 +2,11 @@
 title: python小技巧合辑
 copyright: true
 comments: true
-categories: python
+categories:
+  - 技术
+  - python
 tags:
   - python
-  - 技巧
 abbrlink: 1c0e2abb
 date: 2017-12-19 10:10:52
 ---

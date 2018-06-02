@@ -4,7 +4,7 @@ copyright: true
 comments: true
 categories:
   - 技术
-  - hexo
+  - 博客
 tags:
   - hexo
 abbrlink: d4772490

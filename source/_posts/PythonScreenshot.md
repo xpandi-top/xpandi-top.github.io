@@ -1,11 +1,14 @@
 ---
-title: python屏幕截图与鼠标操作
+title: python屏幕截图与鼠标模拟
 copyright: true
 comments: true
-categories: python
+categories:
+  - 技术
+  - python
 tags:
   - python
   - 截图
+  - 鼠标模拟
 abbrlink: 5deff486
 date: 2017-12-27 21:29:38
 ---

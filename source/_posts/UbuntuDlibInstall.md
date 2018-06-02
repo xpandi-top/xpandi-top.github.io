@@ -2,11 +2,12 @@
 title: Ubuntu下安装dlib步骤
 copyright: true
 comments: true
-categories: 技术
+categories:
+  - 技术
+  - linux
 tags: 
   - dlib
   - unubtu
-  - 翻译
 author: Di
 abbrlink: 6af76d8
 date: 2018-06-02 15:16:44

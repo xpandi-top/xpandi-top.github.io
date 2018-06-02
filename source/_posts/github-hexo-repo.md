@@ -1,11 +1,11 @@
 ---
 title: Github Pages 博客搭建
 author: Pan
-categories: 技术
-tags:
+categories: 
+  - 技术
   - 博客
+tags:
   - hexo
-  - git
 copyright: true
 abbrlink: f491b9ba
 date: 2017-12-09 18:01:12

@@ -1,10 +1,12 @@
 ---
-title: matlab-tricks
+title: Matlab-tricks
 copyright: true
 comments: true
-categories: 技术
+categories:
+  - 技术
+  - Matlab
 tags:
-  - matlab
+  - Matlab
 abbrlink: 57dbd055
 date: 2017-12-21 15:33:43
 ---
