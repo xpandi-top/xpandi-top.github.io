@@ -3,7 +3,10 @@ title: Ubuntu下安装dlib步骤
 copyright: true
 comments: true
 categories: 技术
-tags: 'dlib, unubtu, 翻译'
+tags: 
+  - dlib
+  - unubtu
+  - 翻译
 author: Di
 abbrlink: 6af76d8
 date: 2018-06-02 15:16:44
@@ -11,6 +14,7 @@ date: 2018-06-02 15:16:44
 
 原文链接：https://www.learnopencv.com/install-dlib-on-ubuntu/
 按照原文的步骤安装，没有什么太大的问题，主要是python创建虚拟环境那里报了错误。按照网上查找的资料是可以解决的。不过最后自己选择了用[conda管理环境][1]，感觉也挺方便的。
+<!--more-->
 
 介绍Ubuntu上装Dlib的步骤
 
@@ -154,5 +158,5 @@ deactivate
 如果需要运行运用dlib的python脚本，首先激活相应的python虚拟环境
 
 
-  [1]: http://www.xpandi.top/2017/12/30/python23conda/
+  [1]: http://www.xpandi.top/posts/b5a05a6e/
   [2]: https://stackoverflow.com/questions/33996361/create-a-shared-library-for-dlib/33997825#33997825
