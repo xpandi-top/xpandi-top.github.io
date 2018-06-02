@@ -85,7 +85,7 @@ menu:
   # linuxmenu: /linux/ || linux
   tech: /categories/技术/ || linux
   entertainment: /categories/娱乐/ || gamepad
-  literature: /categories/文献/  || file-alt
+  literature: /categories/文献/  || file
   categories: /categories/ || th
   tags: /tags/ || tags
   # sitemap: /sitemap.xml || sitemap
