@@ -86,10 +86,11 @@ menu:
   tech: /categories/技术/ || linux
   entertainment: /categories/娱乐/ || gamepad
   literature: /categories/文献/  || file
+  projects: /categories/项目/ || linux
   categories: /categories/ || th
   tags: /tags/ || tags
   # sitemap: /sitemap.xml || sitemap
-  schedule: /schedule/ || calendar
+  # schedule: /schedule/ || calendar
   #commonweal: /404/ || heartbeat
   # archives: /archives/ || archive
 
