@@ -86,7 +86,8 @@ menu:
   tech: /categories/技术/ || linux
   entertainment: /categories/娱乐/ || gamepad
   literature: /categories/文献/  || file
-  projects: /categories/项目/ || linux
+  projects: /categories/项目/ || project-diagram
+  resources: /categories/资源/ || stream
   categories: /categories/ || th
   tags: /tags/ || tags
   # sitemap: /sitemap.xml || sitemap
