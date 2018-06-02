@@ -83,12 +83,13 @@ menu:
   home: / || home
   about: /about/ || user-circle
   # linuxmenu: /linux/ || linux
-  python: /categories/python/ || linux
-  boardgame: /categories/桌游小课堂/ || gamepad
+  tech: /categories/技术/ || linux
+  entertainment: /categories/娱乐/ || gamepad
+  literature: /categories/文献/  || file-alt
   categories: /categories/ || th
   tags: /tags/ || tags
-  #schedule: /schedule/ || calendar
-  sitemap: /sitemap.xml || sitemap
+  # sitemap: /sitemap.xml || sitemap
+  schedule: /schedule/ || calendar
   #commonweal: /404/ || heartbeat
   # archives: /archives/ || archive
 
