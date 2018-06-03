@@ -1,13 +1,14 @@
 ---
-title: EbookDownload
+title: 电子书搜索平台
 copyright: true
 comments: true
-date: 2018-06-03 01:30:36
 categories:
-   - 资源
-   - 书籍
+  - 资源
+  - 书籍
 tags: 电子书
 author: Di
+abbrlink: b2078b98
+date: 2018-06-03 01:30:36
 ---
 一些个人常用的电子书搜索平台
 <!--more-->
