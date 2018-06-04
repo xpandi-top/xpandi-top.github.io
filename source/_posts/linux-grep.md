@@ -2,10 +2,11 @@
 title: Linux命令grep
 copyright: true
 comments: true
-categories: linux
+categories: 
+    - 技术
+    - linux
 tags:
-  - 技术
-  - linux
+    - linux
 abbrlink: 8cd3a42b
 date: 2018-04-02 20:40:40
 ---
