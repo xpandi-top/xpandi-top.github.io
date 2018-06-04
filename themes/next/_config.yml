@@ -82,7 +82,6 @@ index_with_subtitle: false
 menu:
   home: / || home
   about: /about/ || user-circle
-  # linuxmenu: /linux/ || linux
   tech: /categories/技术/ || linux
   entertainment: /categories/娱乐/ || gamepad
   literature: /categories/文献/  || file
@@ -238,7 +237,7 @@ post_wordcount:
   #description: ex. subscribe to my blog by scanning my public wechat account
 
 # Reward
-reward_comment: "坚持原创，感谢您的支持！"
+reward_comment: "坚持原创，感谢支持！"
 wechatpay: /images/wechatpay.png
 alipay: /images/alipay.png
 #bitcoin: /images/bitcoin.png
