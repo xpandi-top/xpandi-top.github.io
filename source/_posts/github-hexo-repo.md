@@ -1,11 +1,11 @@
 ---
 title: Github Pages 博客搭建
 author: Pan
-categories: 技术
-tags:
+categories: 
+  - 技术
   - 博客
+tags:
   - hexo
-  - git
 copyright: true
 abbrlink: f491b9ba
 date: 2017-12-09 18:01:12
@@ -52,6 +52,7 @@ hexo new "name"
 git add .
 git commit -m "add file"
 git push origin hexo
+hexo clean # 在多次尝试中发现，加上clean，上传的才会比较好
 hexo generate
 hexo generate -d
 ```

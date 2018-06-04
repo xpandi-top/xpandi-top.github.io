@@ -1,11 +1,11 @@
 ---
 title: 昆虫棋中文规则
 author: Pan
-categories: 桌游小课堂
-tags:
+categories:
+  - 娱乐
   - 桌游
+tags:
   - 昆虫棋
-  - 规则
 cpoyright: true
 abbrlink: bf131ed7
 date: 2017-12-14 23:38:35

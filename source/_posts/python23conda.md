@@ -1,10 +1,13 @@
 ---
-title: windows系统anaconda中python2与python3共存
+title: python2和3版本管理[Win]
 copyright: true
 comments: true
-categories: python
+categories:
+  - 技术
+  - python
 tags:
   - anaconda
+  - python多版本
 author: Di
 abbrlink: b5a05a6e
 date: 2017-12-30 00:09:13

@@ -2,10 +2,10 @@
 title: 卡卡颂中文规则
 copyright: true
 comments: true
-categories: 桌游小课堂
-tags:
+categories: 
+  - 娱乐
   - 桌游
-  - 规则
+tags:
   - 卡卡颂
 author: Pan
 abbrlink: 4ea8f927

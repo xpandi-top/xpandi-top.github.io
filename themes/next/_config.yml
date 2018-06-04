@@ -82,14 +82,24 @@ index_with_subtitle: false
 menu:
   home: / || home
   about: /about/ || user-circle
+<<<<<<< HEAD
   linuxmenu: /categories/linux/ || linux
   python: /categories/python/ || linux
   boardgame: /categories/桌游小课堂/ || gamepad
   categories: /categories/ || th
+=======
+  # linuxmenu: /linux/ || linux
+  tech: /categories/技术/ || linux
+  entertainment: /categories/娱乐/ || gamepad
+  literature: /categories/文献/  || file
+  projects: /categories/项目/ || sitemap
+  resources: /categories/资源/ || th
+  categories: /categories/ || bars 
+>>>>>>> bc9c3b5c2865edf14d786c6e1af4a50e9cea8dd2
   tags: /tags/ || tags
-  #schedule: /schedule/ || calendar
-  sitemap: /sitemap.xml || sitemap
-  #commonweal: /404/ || heartbeat
+  # sitemap: /sitemap.xml || sitemap
+  # schedule: /schedule/ || calendar
+  # commonweal: /404/ || heartbeat
   # archives: /archives/ || archive
 
 # Enable/Disable menu icons.

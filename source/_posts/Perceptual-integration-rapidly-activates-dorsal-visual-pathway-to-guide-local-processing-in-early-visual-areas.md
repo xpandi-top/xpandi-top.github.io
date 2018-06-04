@@ -5,7 +5,9 @@ title: >-
 copyright: true
 comments: true
 author: Di
-categories: 文献
+categories: 
+  - 文献
+  - 心理学
 tags:
   - 整体知觉
 abbrlink: e939781d

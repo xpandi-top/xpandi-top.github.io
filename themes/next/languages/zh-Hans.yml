@@ -16,9 +16,11 @@ menu:
   schedule: 日程表
   sitemap: 站点地图
   commonweal: 公益404
-  boardgame: 桌游小课堂
-  linuxmenu: Linux命令
-
+  tech: 技术
+  entertainment: 娱乐 
+  literature: 文献
+  projects: 项目
+  resources: 资源
 sidebar:
   overview: 站点概览
   toc: 文章目录

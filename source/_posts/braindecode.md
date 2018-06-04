@@ -2,9 +2,10 @@
 title: Deep leaning处理EEG数据-braindecode工具箱
 copyright: true
 comments: true
-categories: 机器学习
+categories: 
+  - 项目
+  - 心理学
 tags:
-  - python
   - braindecode
   - eeg
 abbrlink: c786e694
