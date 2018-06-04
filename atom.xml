@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.xpandi.top/"/>
-  <updated>2018-06-04T05:48:03.615Z</updated>
+  <updated>2018-06-04T08:47:54.220Z</updated>
   <id>http://www.xpandi.top/</id>
   
   <author>
@@ -17,23 +17,26 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>2018BookList</title>
+    <title>2018阅读清单</title>
     <link href="http://www.xpandi.top/posts/7dcd2451/"/>
     <id>http://www.xpandi.top/posts/7dcd2451/</id>
     <published>2018-06-03T15:32:11.000Z</published>
-    <updated>2018-06-04T05:48:03.615Z</updated>
+    <updated>2018-06-04T08:47:54.220Z</updated>
     
-    <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script>]]></content>
+    <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><p>2018年在读以及计划阅读的书籍<br><a id="more"></a></p><h4 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h4><p>Deep learning<br>数据处理<br>R</p><h4 id="推理"><a href="#推理" class="headerlink" title="推理"></a>推理</h4><p>埃勒里·奎因系列</p><h4 id="鬼怪"><a href="#鬼怪" class="headerlink" title="鬼怪"></a>鬼怪</h4><p>《中国神话史》<br>《子不语》<br>《中华神秘文化》：相术文化<br>《中国民俗文化大观》<br>《魂魄》</p><h4 id="性"><a href="#性" class="headerlink" title="性"></a>性</h4><p>《性张力下的中国人》</p><h4 id="经典"><a href="#经典" class="headerlink" title="经典"></a>经典</h4><p>《诗经》</p><h4 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h4><p>《梦里花落知多少》<br>《黄金时代》<br>《自卑与超越》<br>《查泰莱夫人的情人》<br>《房思琪的初恋乐园》</p>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;
-      
+      &lt;p&gt;2018年在读以及计划阅读的书籍&lt;br&gt;
     
     </summary>
     
+      <category term="项目" scheme="http://www.xpandi.top/categories/%E9%A1%B9%E7%9B%AE/"/>
+    
+      <category term="清单" scheme="http://www.xpandi.top/categories/%E9%A1%B9%E7%9B%AE/%E6%B8%85%E5%8D%95/"/>
+    
+    
+      <category term="阅读" scheme="http://www.xpandi.top/tags/%E9%98%85%E8%AF%BB/"/>
     
   </entry>
   
@@ -108,6 +111,30 @@
       <category term="dlib" scheme="http://www.xpandi.top/tags/dlib/"/>
     
       <category term="unubtu" scheme="http://www.xpandi.top/tags/unubtu/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux命令grep</title>
+    <link href="http://www.xpandi.top/posts/8cd3a42b/"/>
+    <id>http://www.xpandi.top/posts/8cd3a42b/</id>
+    <published>2018-04-02T12:40:40.000Z</published>
+    <updated>2018-06-04T08:33:08.810Z</updated>
+    
+    <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><p>趁着有空，把最近常用的／新学到的关于linux的命令整理出来。第一波：grep。<br><a id="more"></a><br>grep 是一个非常常用的，查询／匹配用的命令。<br>基本用法：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep apple test.txt</span><br></pre></td></tr></table></figure></p><p>参数含义：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ man grep </span><br><span class="line">     grep [-abcdDEFGHhIiJLlmnOopqRSsUVvwxZ] [-A num] [-B num] [-C[num]]</span><br><span class="line">          [-e pattern] [-f file] [--binary-files=value] [--color[=when]]</span><br><span class="line">          [--colour[=when]] [--context[=num]] [--label] [--line-buffered]</span><br><span class="line">          [--null] [pattern] [file ...]</span><br></pre></td></tr></table></figure></p><p>小技巧：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># match tab in grep 匹配制表符</span></span><br><span class="line">grep apple$<span class="string">'\t'</span> test.txt</span><br><span class="line"></span><br><span class="line"><span class="comment"># logic and in grep 逻辑与</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># logic or in grep 逻辑或</span></span><br></pre></td></tr></table></figure></p><p>未完待续…</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;趁着有空，把最近常用的／新学到的关于linux的命令整理出来。第一波：grep。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="技术" scheme="http://www.xpandi.top/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="linux" scheme="http://www.xpandi.top/categories/%E6%8A%80%E6%9C%AF/linux/"/>
+    
+    
+      <category term="linux" scheme="http://www.xpandi.top/tags/linux/"/>
     
   </entry>
   
@@ -454,7 +481,7 @@
     <published>2017-12-09T10:01:12.000Z</published>
     <updated>2018-06-04T05:47:43.171Z</updated>
     
-    <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><p>把自己折腾博客的过程贴上来吧。<br><a id="more"></a></p><h2 id="搭建github-博客的步骤："><a href="#搭建github-博客的步骤：" class="headerlink" title="搭建github 博客的步骤："></a>搭建github 博客的步骤：</h2><h4 id="在本地："><a href="#在本地：" class="headerlink" title="在本地："></a>在本地：</h4><p>安装nodejs和git -&gt; 安装hexo -&gt;  hexo init -&gt; 配置configuration</p><h4 id="在github上："><a href="#在github上：" class="headerlink" title="在github上："></a>在github上：</h4><p>创建账户 -&gt; 本机添加ssh -&gt; 创建“账户名.github.io”的仓库 -&gt; 填入hexo的配置文件</p><p>每次hexo deploy 都会把渲染好的文件上传到github仓库。</p><hr><p>如果想在多台电脑上编辑，可以把hexo的源代码也上传到github，方便管理。只要将hexo源码和渲染后的网页放在不同的branch即可。</p><h3 id="配置方法："><a href="#配置方法：" class="headerlink" title="配置方法："></a>配置方法：</h3><p>在repo中新建一个名为hexo的branch（可以先提交过去一个空文件，再删掉）。</p><p>进入配置页面把hexo分支设为主分支。</p><p>得到的的github repo 结构：</p><p>branch hexo  存放hexo的source code</p><p>branch master 存放hexo的渲染之后的文件。</p><p>每次都把编辑好的源代码push到hexo分支下，同时让hexo把generate之后的网页放在master分支。</p><h3 id="添加文章的流程："><a href="#添加文章的流程：" class="headerlink" title="添加文章的流程："></a>添加文章的流程：</h3><p>在repo的文件夹下进入终端（windows可以进入git bash）</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> 添加新文章</span><br><span class="line">hexo new "name"</span><br></pre></td></tr></table></figure><p>编辑“name.md”文件<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> 部署文章</span><br><span class="line">git add .</span><br><span class="line">git commit -m "add file"</span><br><span class="line">git push origin hexo</span><br><span class="line">hexo clean # 在多次尝试中发现，加上clean，上传的才会比较好</span><br><span class="line">hexo generate</span><br><span class="line">hexo generate -d</span><br></pre></td></tr></table></figure></p><h3 id="在新电脑上配置的流程："><a href="#在新电脑上配置的流程：" class="headerlink" title="在新电脑上配置的流程："></a>在新电脑上配置的流程：</h3><p>在任意文件夹执行：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git clone *  # 替换为项目repo的链接</span><br><span class="line">npm install</span><br><span class="line"><span class="meta">#</span> 不需要再hexo init，直接编辑文件，然后</span><br></pre></td></tr></table></figure></p>]]></content>
+    <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><p>把自己折腾博客的过程贴上来吧。<br><a id="more"></a></p><h2 id="搭建github-博客的步骤："><a href="#搭建github-博客的步骤：" class="headerlink" title="搭建github 博客的步骤："></a>搭建github 博客的步骤：</h2><h4 id="在本地："><a href="#在本地：" class="headerlink" title="在本地："></a>在本地：</h4><p>安装nodejs和git -&gt; 安装hexo -&gt;  hexo init -&gt; 配置configuration</p><h4 id="在github上："><a href="#在github上：" class="headerlink" title="在github上："></a>在github上：</h4><p>创建账户 -&gt; 本机添加ssh -&gt; 创建“账户名.github.io”的仓库 -&gt; 填入hexo的配置文件</p><p>每次hexo deploy 都会把渲染好的文件上传到github仓库。</p><hr><p>如果想在多台电脑上编辑，可以把hexo的源代码也上传到github，方便管理。只要将hexo源码和渲染后的网页放在不同的branch即可。</p><h3 id="配置方法："><a href="#配置方法：" class="headerlink" title="配置方法："></a>配置方法：</h3><p>在repo中新建一个名为hexo的branch（可以先提交过去一个空文件，再删掉）。</p><p>进入配置页面把hexo分支设为主分支。</p><p>得到的的github repo 结构：</p><p>branch hexo  存放hexo的source code</p><p>branch master 存放hexo的渲染之后的文件。</p><p>每次都把编辑好的源代码push到hexo分支下，同时让hexo把generate之后的网页放在master分支。</p><h3 id="添加文章的流程："><a href="#添加文章的流程：" class="headerlink" title="添加文章的流程："></a>添加文章的流程：</h3><p>在repo的文件夹下进入终端（windows可以进入git bash）</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 添加新文章</span></span><br><span class="line">hexo new "name"</span><br></pre></td></tr></table></figure><p>编辑“name.md”文件<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 部署文章</span></span><br><span class="line">git add .</span><br><span class="line">git commit -m "add file"</span><br><span class="line">git push origin hexo</span><br><span class="line">hexo clean # 在多次尝试中发现，加上clean，上传的才会比较好</span><br><span class="line">hexo generate</span><br><span class="line">hexo generate -d</span><br></pre></td></tr></table></figure></p><h3 id="在新电脑上配置的流程："><a href="#在新电脑上配置的流程：" class="headerlink" title="在新电脑上配置的流程："></a>在新电脑上配置的流程：</h3><p>在任意文件夹执行：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git clone *  # 替换为项目repo的链接</span><br><span class="line">npm install</span><br><span class="line"><span class="meta">#</span><span class="bash"> 不需要再hexo init，直接编辑文件，然后</span></span><br></pre></td></tr></table></figure></p>]]></content>
     
     <summary type="html">
     

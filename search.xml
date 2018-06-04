@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[2018BookList]]></title>
+    <title><![CDATA[2018阅读清单]]></title>
     <url>%2Fposts%2F7dcd2451%2F</url>
-    <content type="text"><![CDATA[]]></content>
+    <content type="text"><![CDATA[2018年在读以及计划阅读的书籍 学习Deep learning数据处理R 推理埃勒里·奎因系列 鬼怪《中国神话史》《子不语》《中华神秘文化》：相术文化《中国民俗文化大观》《魂魄》 性《性张力下的中国人》 经典《诗经》 其他《梦里花落知多少》《黄金时代》《自卑与超越》《查泰莱夫人的情人》《房思琪的初恋乐园》]]></content>
+      <categories>
+        <category>项目</category>
+        <category>清单</category>
+      </categories>
+      <tags>
+        <tag>阅读</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[2018观影清单]]></title>
@@ -40,6 +47,18 @@
       <tags>
         <tag>dlib</tag>
         <tag>unubtu</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Linux命令grep]]></title>
+    <url>%2Fposts%2F8cd3a42b%2F</url>
+    <content type="text"><![CDATA[趁着有空，把最近常用的／新学到的关于linux的命令整理出来。第一波：grep。grep 是一个非常常用的，查询／匹配用的命令。基本用法：1grep apple test.txt 参数含义：12345$ man grep grep [-abcdDEFGHhIiJLlmnOopqRSsUVvwxZ] [-A num] [-B num] [-C[num]] [-e pattern] [-f file] [--binary-files=value] [--color[=when]] [--colour[=when]] [--context[=num]] [--label] [--line-buffered] [--null] [pattern] [file ...] 小技巧：123456# match tab in grep 匹配制表符grep apple$'\t' test.txt# logic and in grep 逻辑与# logic or in grep 逻辑或 未完待续…]]></content>
+      <categories>
+        <category>技术</category>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
       </tags>
   </entry>
   <entry>
