@@ -2,11 +2,11 @@
 title: 山屋惊魂中文规则
 author: Pan
 categories: 
-  - 娱乐
-  - 桌游
+    - 娱乐
+    - 桌游
 tags:
-  - 山屋惊魂
-  - 小黑屋
+    - 山屋惊魂
+    - 小黑屋
 copyright: true
 abbrlink: f96f39db
 date: 2017-12-13 15:24:48

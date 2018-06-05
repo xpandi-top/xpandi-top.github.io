@@ -3,10 +3,10 @@ title: Hexo的NexT主题优化
 copyright: true
 comments: true
 categories:
-  - 技术
-  - 博客
+    - 技术
+    - 博客
 tags:
-  - hexo
+    - hexo
 abbrlink: d4772490
 date: 2017-12-24 20:27:33
 ---

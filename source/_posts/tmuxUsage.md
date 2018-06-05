@@ -3,11 +3,11 @@ title: tmux使用
 copyright: true
 comments: true
 categories: 
-  - 技术
-  - linux
+    - 技术
+    - linux
 tags:
-  - tmux
-  - terminal
+    - tmux
+    - terminal
 abbrlink: cb2d43c3
 date: 2017-12-29 08:15:15
 ---

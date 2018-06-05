@@ -3,8 +3,8 @@ title: 电子书搜索平台
 copyright: true
 comments: true
 categories:
-  - 资源
-  - 书籍
+    - 资源
+    - 书籍
 tags: 电子书
 author: Di
 abbrlink: b2078b98

@@ -2,10 +2,10 @@
 title: 昆虫棋中文规则
 author: Pan
 categories:
-  - 娱乐
-  - 桌游
+    - 娱乐
+    - 桌游
 tags:
-  - 昆虫棋
+    - 昆虫棋
 cpoyright: true
 abbrlink: bf131ed7
 date: 2017-12-14 23:38:35

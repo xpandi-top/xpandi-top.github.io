@@ -3,10 +3,10 @@ title: 卡卡颂中文规则
 copyright: true
 comments: true
 categories: 
-  - 娱乐
-  - 桌游
+    - 娱乐
+    - 桌游
 tags:
-  - 卡卡颂
+    - 卡卡颂
 author: Pan
 abbrlink: 4ea8f927
 date: 2017-12-19 00:14:58
