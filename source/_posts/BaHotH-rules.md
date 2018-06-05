@@ -7,6 +7,7 @@ categories:
 tags:
     - 山屋惊魂
     - 小黑屋
+author: Pan
 copyright: true
 abbrlink: f96f39db
 date: 2017-12-13 15:24:48

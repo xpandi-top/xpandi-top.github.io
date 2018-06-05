@@ -7,6 +7,7 @@ categories:
     - 图标
 tags: 
     - 图标
+author: Pan
 abbrlink: e33c66fa
 date: 2017-12-23 17:51:46
 ---
@@ -16,6 +17,7 @@ date: 2017-12-23 17:51:46
 网址：http://fontawesome.io
 
 在hexo页面上的使用：
+
 打开next主题的配置文件，找到如下位置：
 
 ``` yml
@@ -35,5 +37,6 @@ menu:
   tags: /tags/ || tags
 ```
 
-对menu中的每个条目，双竖线后面接的就是图标在网站中的名字。就可以在next主题中看到相应的图标。
-注：有些图标会不成功，可能是权限问题。多换几个就会找到可以用的。
+对menu中的每个条目，双竖线后面接的就是图标在网站中的名字，比如下图中的adversal。就可以在next主题中看到相应的图标。
+![enter description here](http://p15ezcjt2.bkt.clouddn.com/xiaoshujiang/fontawesome.png)
+注：根据我自己测试有些图标会不成功，似乎不是语法的问题，可能是权限问题。如果遇到了这种情况就换一个吧。
