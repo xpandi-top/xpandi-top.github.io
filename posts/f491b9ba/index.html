@@ -485,9 +485,9 @@
 <p>branch master 存放hexo的渲染之后的文件。</p>
 <p>每次都把编辑好的源代码push到hexo分支下，同时让hexo把generate之后的网页放在master分支。</p>
 <h3 id="添加文章的流程："><a href="#添加文章的流程：" class="headerlink" title="添加文章的流程："></a>添加文章的流程：</h3><p>在repo的文件夹下进入终端（windows可以进入git bash）</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> 添加新文章</span><br><span class="line">hexo new "name"</span><br></pre></td></tr></table></figure>
-<p>编辑“name.md”文件<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> 部署文章</span><br><span class="line">git add .</span><br><span class="line">git commit -m "add file"</span><br><span class="line">git push origin hexo</span><br><span class="line">hexo clean # 在多次尝试中发现，加上clean，上传的才会比较好</span><br><span class="line">hexo generate</span><br><span class="line">hexo generate -d</span><br></pre></td></tr></table></figure></p>
-<h3 id="在新电脑上配置的流程："><a href="#在新电脑上配置的流程：" class="headerlink" title="在新电脑上配置的流程："></a>在新电脑上配置的流程：</h3><p>在任意文件夹执行：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git clone *  # 替换为项目repo的链接</span><br><span class="line">npm install</span><br><span class="line"><span class="meta">#</span> 不需要再hexo init，直接编辑文件，然后</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 添加新文章</span></span><br><span class="line">hexo new "name"</span><br></pre></td></tr></table></figure>
+<p>编辑“name.md”文件<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 部署文章</span></span><br><span class="line">git add .</span><br><span class="line">git commit -m "add file"</span><br><span class="line">git push origin hexo</span><br><span class="line">hexo clean # 在多次尝试中发现，加上clean，上传的才会比较好</span><br><span class="line">hexo generate</span><br><span class="line">hexo generate -d</span><br></pre></td></tr></table></figure></p>
+<h3 id="在新电脑上配置的流程："><a href="#在新电脑上配置的流程：" class="headerlink" title="在新电脑上配置的流程："></a>在新电脑上配置的流程：</h3><p>在任意文件夹执行：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git clone *  # 替换为项目repo的链接</span><br><span class="line">npm install</span><br><span class="line"><span class="meta">#</span><span class="bash"> 不需要再hexo init，直接编辑文件，然后</span></span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -692,7 +692,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">17</span>
+                  <span class="site-state-item-count">16</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
