@@ -1,13 +1,13 @@
 ---
-title: BTisornotValid
+title: 大脑训练（brain training）真的有效么？
 categories:
-  - 项目
   - 文献
 copyright: true
 comments: true
-date: 2018-06-06 19:17:05
 tags: 大脑训练
 author: Di
+abbrlink: 3715ed0d
+date: 2018-06-06 19:17:05
 ---
 打着可以训练大脑能力的APP真的挺多的，实际上，其效果的研究并不是很多。
 曾经玩过一些这类的APP，但是也没坚持玩。记忆中这些app很多任务都是与记忆相关的，多是短时记忆的。
