@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.xpandi.top/"/>
-  <updated>2018-06-10T11:05:50.103Z</updated>
+  <updated>2018-06-11T08:34:30.765Z</updated>
   <id>http://www.xpandi.top/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ReasearchSources</title>
+    <link href="http://www.xpandi.top/posts/f16ca115/"/>
+    <id>http://www.xpandi.top/posts/f16ca115/</id>
+    <published>2018-06-11T08:34:30.000Z</published>
+    <updated>2018-06-11T08:34:30.765Z</updated>
+    
+    <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>大脑训练（brain training）真的有效么？</title>
@@ -492,30 +513,6 @@
       <category term="山屋惊魂" scheme="http://www.xpandi.top/tags/%E5%B1%B1%E5%B1%8B%E6%83%8A%E9%AD%82/"/>
     
       <category term="小黑屋" scheme="http://www.xpandi.top/tags/%E5%B0%8F%E9%BB%91%E5%B1%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Github Pages 博客搭建</title>
-    <link href="http://www.xpandi.top/posts/f491b9ba/"/>
-    <id>http://www.xpandi.top/posts/f491b9ba/</id>
-    <published>2017-12-09T10:01:12.000Z</published>
-    <updated>2018-06-06T11:08:49.916Z</updated>
-    
-    <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><p>把自己折腾博客的过程贴上来吧。<br><a id="more"></a></p><h2 id="搭建github-博客的步骤："><a href="#搭建github-博客的步骤：" class="headerlink" title="搭建github 博客的步骤："></a>搭建github 博客的步骤：</h2><h4 id="在本地："><a href="#在本地：" class="headerlink" title="在本地："></a>在本地：</h4><p>安装nodejs和git -&gt; 安装hexo -&gt;  hexo init -&gt; 配置configuration</p><h4 id="在github上："><a href="#在github上：" class="headerlink" title="在github上："></a>在github上：</h4><p>创建账户 -&gt; 本机添加ssh -&gt; 创建“账户名.github.io”的仓库 -&gt; 填入hexo的配置文件</p><p>每次hexo deploy 都会把渲染好的文件上传到github仓库。</p><hr><p>如果想在多台电脑上编辑，可以把hexo的源代码也上传到github，方便管理。只要将hexo源码和渲染后的网页放在不同的branch即可。</p><h3 id="配置方法："><a href="#配置方法：" class="headerlink" title="配置方法："></a>配置方法：</h3><p>在repo中新建一个名为hexo的branch（可以先提交过去一个空文件，再删掉）。</p><p>进入配置页面把hexo分支设为主分支。</p><p>得到的的github repo 结构：</p><p>branch hexo  存放hexo的source code</p><p>branch master 存放hexo的渲染之后的文件。</p><p>每次都把编辑好的源代码push到hexo分支下，同时让hexo把generate之后的网页放在master分支。</p><h3 id="添加文章的流程："><a href="#添加文章的流程：" class="headerlink" title="添加文章的流程："></a>添加文章的流程：</h3><p>在repo的文件夹下进入终端（windows可以进入git bash）</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 添加新文章</span></span><br><span class="line">hexo new "name"</span><br></pre></td></tr></table></figure><p>编辑“name.md”文件<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 部署文章</span></span><br><span class="line">git add .</span><br><span class="line">git commit -m "add file"</span><br><span class="line">git push origin hexo</span><br><span class="line">hexo clean # 在多次尝试中发现，加上clean，上传的才会比较好</span><br><span class="line">hexo generate</span><br><span class="line">hexo generate -d</span><br></pre></td></tr></table></figure></p><h3 id="在新电脑上配置的流程："><a href="#在新电脑上配置的流程：" class="headerlink" title="在新电脑上配置的流程："></a>在新电脑上配置的流程：</h3><p>在任意文件夹执行：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git clone *  # 替换为项目repo的链接</span><br><span class="line">npm install</span><br><span class="line"><span class="meta">#</span><span class="bash"> 不需要再hexo init，直接编辑文件，然后</span></span><br></pre></td></tr></table></figure></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;把自己折腾博客的过程贴上来吧。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="技术" scheme="http://www.xpandi.top/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-      <category term="博客" scheme="http://www.xpandi.top/categories/%E6%8A%80%E6%9C%AF/%E5%8D%9A%E5%AE%A2/"/>
-    
-    
-      <category term="hexo" scheme="http://www.xpandi.top/tags/hexo/"/>
     
   </entry>
   
