@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.xpandi.top/"/>
-  <updated>2018-06-11T11:00:30.740Z</updated>
+  <updated>2018-06-13T15:41:45.513Z</updated>
   <id>http://www.xpandi.top/</id>
   
   <author>
@@ -17,23 +17,24 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>ReasearchSources</title>
-    <link href="http://www.xpandi.top/posts/f16ca115/"/>
-    <id>http://www.xpandi.top/posts/f16ca115/</id>
+    <title>好用的学习应用</title>
+    <link href="http://www.xpandi.top/posts/39d1af20/"/>
+    <id>http://www.xpandi.top/posts/39d1af20/</id>
     <published>2018-06-11T08:34:30.000Z</published>
-    <updated>2018-06-11T11:00:30.740Z</updated>
+    <updated>2018-06-13T15:41:45.513Z</updated>
     
-    <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script>]]></content>
+    <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><p>不定期更新一些自己常用的学习的应用和网站<br><a id="more"></a></p><h3 id="文献管理"><a href="#文献管理" class="headerlink" title="文献管理"></a>文献管理</h3><ul><li><p><a href="https://www.mendeley.com/" target="_blank" rel="noopener">Mendley</a><br>个人很喜欢的文献管理软件，可以读pdf也可以导出文献，也有插件。非常容易上手</p></li><li><p><a href="https://www.researcher-app.com/" target="_blank" rel="noopener">Reaearcher</a><br>账号可以跟mendley绑定，绑定后可以把文献发送到mendley.手机端可follow多种文献。昨天才发现nature有科幻小说。</p></li></ul><h3 id="搜索"><a href="#搜索" class="headerlink" title="搜索"></a>搜索</h3><ul><li>Google Scholar</li></ul><h3 id="翻译"><a href="#翻译" class="headerlink" title="翻译"></a>翻译</h3><ul><li>Google Translation</li></ul><h3 id="写作"><a href="#写作" class="headerlink" title="写作"></a>写作</h3><ul><li><p>小书匠<br>markdown写作，超级推荐吧。目前在用</p></li><li><p>LaTEX<br>也就这两天才用的，跟markdown很像吧。</p></li></ul>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;
-      
+      &lt;p&gt;不定期更新一些自己常用的学习的应用和网站&lt;br&gt;
     
     </summary>
     
+      <category term="资源" scheme="http://www.xpandi.top/categories/%E8%B5%84%E6%BA%90/"/>
+    
+    
+      <category term="学术" scheme="http://www.xpandi.top/tags/%E5%AD%A6%E6%9C%AF/"/>
     
   </entry>
   
