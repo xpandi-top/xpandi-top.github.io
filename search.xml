@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[在cmd里设置环境变量[Windows]]]></title>
+    <url>%2Fposts%2F3d836e58%2F</url>
+    <content type="text"><![CDATA[不得不吐槽一下：在Windows的系统里找了环境变量的设置，但是就是不能生效，不知道为啥。最后cmd那里就搞定了2333主要命令:set, setx 添加环境变量至系统就以我想添加miniconda的路径为例：path后面直接添加路径就可以了（只对当前的cmd有效）1set path=%path%;C:\Users\modi\Miniconda3\Scripts 如果像永久生效的话，命令改成下面这样的，用命令setx 1setx PATH "%PATH%;C:\Users\modi\Miniconda3\Scripts" 查看当前所有可用的环境变量1set 设置临时的环境变量1set temp = "D:\temp" 查看某个环境变量12345set %PATH%set temp = "D:\temp"set %tempecho %PATH%echo %TEMP%]]></content>
+      <categories>
+        <category>技术</category>
+        <category>windows</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[diary180613]]></title>
+    <url>%2Fposts%2F8dd2cd76%2F</url>
+    <content type="text"><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[好用的学习应用]]></title>
     <url>%2Fposts%2F39d1af20%2F</url>
     <content type="text"><![CDATA[不定期更新一些自己常用的学习的应用和网站 文献管理 Mendley个人很喜欢的文献管理软件，可以读pdf也可以导出文献，也有插件。非常容易上手 Reaearcher账号可以跟mendley绑定，绑定后可以把文献发送到mendley.手机端可follow多种文献。昨天才发现nature有科幻小说。 搜索 Google Scholar 翻译 Google Translation 写作 小书匠markdown写作，超级推荐吧。目前在用 LaTEX也就这两天才用的，跟markdown很像吧。]]></content>
