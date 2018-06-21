@@ -4,9 +4,10 @@ categories:
   - 资源
 copyright: true
 comments: true
-date: 2018-06-11 16:34:30
 tags: 学术
 author: Di
+abbrlink: 39d1af20
+date: 2018-06-11 16:34:30
 ---
 不定期更新一些自己常用的学习的应用和网站
 <!--more-->
