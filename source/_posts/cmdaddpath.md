@@ -1,13 +1,14 @@
 ---
-title: 在cmd里设置环境变量[Windows]
+title: '在cmd里设置环境变量[Windows]'
 categories:
   - 技术
   - windows
 copyright: true
 comments: true
+author: Di
+abbrlink: 3d836e58
 date: 2018-06-21 12:29:38
 tags:
-author: Di
 ---
 不得不吐槽一下：在Windows的系统里找了环境变量的设置，但是就是不能生效，不知道为啥。最后cmd那里就搞定了2333
 主要命令:set, setx
