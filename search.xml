@@ -1,6 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[我要背上吉他离开北方]]></title>
+    <url>%2Fposts%2F867d7fcf%2F</url>
+    <content type="text"><![CDATA[我要背上吉他离开北方——宋东野《斑马，斑马》说起来也确实奇怪，刚才走了几圈，听着张悬的歌，泪流满面，而现在，呆坐在电脑面前，却不知道该说些什么了。那时的心情无法完全完全复制吧。然而总是想写点什么。听着《MALAIMO》，觉得心情舒畅了很多，人生就是无意义的随性集合吧。朋友说叔本华的《附录与补遗》还不错，可以考虑看看吧。在微信阅读上搜了一下叔本华的书，人的意义，人生之类的。每个哲学家对这些总喜欢大书特书。让我想起，就算是我们也忍不住对人生发表一些高谈阔论。其实已经有些困倦了，可是总想写些什么，不为什么，只为了自己，只是想。就像是人生的标记一样。看着弟弟们长大的照片，便觉得心情很复杂。看着他们长大了，觉得很欣慰，还有点小帅也很欣慰，感觉成熟了不少也很欣慰，然而他们的老姐却还是如此，一言难尽。说起他们，心里总觉得亏欠，觉得自己没有做好一个姐姐，没有承担着姐姐的责任。说起能给他们的东西，好像身上也没什么可以给的了。小时候，弟弟们比我矮，还喜欢当跟屁虫，如今，真实一个比一个高，然后还不理我2333。想起他们，觉得幸福。看着家里人认真生活的样子，觉得开心。然而，我好像不知道怎么了吧。想着，看着他们努力生活的样子，自己该如此才是。有些话，不知道像何人诉说，也不知道从何说起。前几日，朋友说的话，仍在脑海里盘旋。我所伤心难过之事不能说，便招来这样的误会是必然的。自己没有这样的习惯。为人所表现的豁达与无畏，半真半假，真的是我确实是这么想的，假的是在自己身上显得苍白。每每入夜，便觉得自在而难过。前一阵子睡不着，这一两天倒是开始困倦不已了。最近总想起两个人，想起他们，心里便觉得一紧。想起了那只小时候做梦梦到的巨型蜘蛛，从天而降。感觉也也是有一只蜘蛛盘旋在上空。明明知道并不可怕，然而还是害怕，明明知道只是虚妄，然而还是会害怕。想起，《金刚经》里的：“诸心皆为非心，是名为心……过去心不可得，现在心不可得，未来心不可得”，也会想起《心经》里的“色即是空，空即是色，受想行识亦复如是”。这两天弹吉他，用手机录下来听，觉得自己唱歌不好听，吉他也要多练一些，希望能够有一天背着吉他可以在街头流浪。说起流浪，以前我说我最想做的事情便是流浪，朋友都觉得我很扯，说流浪很苦什么的。说起来，要是我胆子大一点，也许就说不定与现在截然不同的光景。]]></content>
+      <categories>
+        <category>杂谈</category>
+        <category>小日子</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[SSD-tensorflow学习之制作数据集]]></title>
+    <url>%2Fposts%2F572e9c52%2F</url>
+    <content type="text"><![CDATA[记录一下自己构建数据的一个流程 参考的博客：https://blog.csdn.net/w5688414/article/details/78395177SSD的网络：https://github.com/balancap/SSD-Tensorflow 文件目录下载下来ssd的文件夹目录应该是差不多长这样子的:SSD-Tensorflow-master├─checkpoints├─datasets├─demo├─deployment├─mydata ###这部分文件夹是我自己创建的│ ├─white│ │ ├─Annotations│ │ ├─ImageSets│ │ │ └─Main│ │ └─JPEGImages│ └─white_tfrecord├─nets├─notebooks├─pictures├─preprocessing├─tf_extended 1. 准备数据12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364# 示例数据的位置 data_path = "./mydata/white/" tf_path = "./mydata/white_tfrecord/"``` 以下是我在网络上下载的VOC2007的数据的目录文件，├─VOC2007│ ├─Annotations│ ├─ImageSets│ │ ├─Layout│ │ ├─Main│ │ └─Segmentation│ ├─JPEGImages│ ├─SegmentationClass│ └─SegmentationObject这个示例中主要是要需要Annotation和JPEGimages的文件夹，所以呢就创建了如下的目录：把图片放在JPEGImages目录下，xml格式的文件放在Annotations目录下├─white│ ├─Annotations│ └─JPEGimages│ ├─ImageSets│ │ ├─Main利用程序生成 rain.txt, test.txt, trainval.txt, val.txt```pythonimport osimport random xmlfilepath="./mydata/white/Annotations"saveBasePath="./mydata" trainval_percent=0.8train_percent=0.7total_xml = os.listdir(xmlfilepath)num=len(total_xml) list=range(num) tv=int(num*trainval_percent) tr=int(tv*train_percent) trainval= random.sample(list,tv) train=random.sample(trainval,tr) print("train and val size",tv)print("traib size",tr)ftrainval = open(os.path.join(saveBasePath,'white/ImageSets/Main/trainval.txt'), 'w') ftest = open(os.path.join(saveBasePath,'white/ImageSets/Main/test.txt'), 'w') ftrain = open(os.path.join(saveBasePath,'white/ImageSets/Main/train.txt'), 'w') fval = open(os.path.join(saveBasePath,'white/ImageSets/Main/val.txt'), 'w') for i in list: name=total_xml[i][:-4]+'\n' if i in trainval: ftrainval.write(name) if i in train: ftrain.write(name) else: fval.write(name) else: ftest.write(name) ftrainval.close() ftrain.close() fval.close() ftest .close() 会生成如下的目录├─white│ ├─Annotations│ └─JPEGimages│ ├─ImageSets│ │ └─Main│ │ test.txt│ │ train.txt│ │ trainval.txt│ │ val.txt 数据准备就基本完成了 2. 生成tfrecord的文件数据集生成后，把数据集转换成tfrecord的形式修改 datasets/pascalvoc_common.py文件123456VOC_LABELS = &#123; 'none': (0, 'Background'), 'w,standing': (1, 'w_standing'), 'w,lying ': (2, 'w_lying'), 'w,other': (3, 'w_other'),&#125; 因为采用的是jpeg格式（如果还是jpg格式就不用改了，原代码的格式是jpg），所以在datasets/pascalvoc_to_tfrecords.py 把82行改以一下12filename = directory + DIRECTORY_IMAGES + name + '.jpeg'image_data = tf.gfile.FastGFile(filename, 'rb').read() 运行如果出现这个错误1UnicodeDecodeError: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte 就把83行改成如下所示 1image_data = tf.gfile.FastGFile(filename, 'rb').read() 一些问题 关于LabelImage标注得到的xml得不到Height和weight 看了一下数据，标注jpg得到的xml是正确的，而标注jpeg却得不到height和weight，具体什么原因还没有找，等到之后再看看吧。因为没有得到size所以我在datasets/pascalvoc_to_tfrecords.py中手动指定了size（所有图片的大小都一样，所以这样应该也是没有问题的） 关于打标签 最开始的label打标签用了逗号，其实并不会报什么错，但是就是看起来有点蠢，也是因为自己没有特别理解这个打标签的内容。命名的角度来说，逗号是不太合适的，应该用下划线比较好。]]></content>
+      <categories>
+        <category>技术</category>
+        <category>Tensorflow</category>
+      </categories>
+      <tags>
+        <tag>SSD</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[2018年6月25日]]></title>
+    <url>%2Fposts%2Fa53215a7%2F</url>
+    <content type="text"><![CDATA[家里的几个小孩子高考结束了，不由得想起当时的自己。今天在想如何帮助小孩子们填报志愿，我觉得比填报更重要的是人生的规划，或者说是明白自己该如何的生活。如今的自己也没有想得很明白，究竟应该如何地活着。长期的教育以来，职业规划，人生规划非常的缺乏。所有人都按部就班的走着，走到了某个点，于是一下子便放手了。在父母那一代的日子里，多是为了生活而奋斗，多是为了温饱而努力。现在今非昔比了，我想人都是需要一点梦想或者追求的。人生的追求与思考从来不是说上了大学之后才开始的，而应该是人从小到大的不断探索。所谓未来是什么呢，是某个时间点，还是只是人为所定义的期望。说这些话简直不着逻辑。其实也不知道该说些什么，只是突然想写写东西而已。对于自己而言，今天算是迈出了重要的第一步，然而心里还是很慌张。即便如此，也不知道之后如何。今天的事实证明我太过焦虑了：在之前拼命地想着，如果别人不相信我怎么办。然而一想到有一些事情即将广而告之，便也觉得戚戚然。虽然也算不上什么大事，只是不由得难过了起来。忘了把东西放到哪里了。。。感觉很烦躁。。。邋邋遢遢的毛病该改改了。。。]]></content>
+      <categories>
+        <category>杂谈</category>
+        <category>日记</category>
+      </categories>
+  </entry>
+  <entry>
     <title><![CDATA[在cmd里设置环境变量[Windows]]]></title>
     <url>%2Fposts%2F3d836e58%2F</url>
     <content type="text"><![CDATA[不得不吐槽一下：在Windows的系统里找了环境变量的设置，但是就是不能生效，不知道为啥。最后cmd那里就搞定了2333主要命令:set, setx 添加环境变量至系统就以我想添加miniconda的路径为例：path后面直接添加路径就可以了（只对当前的cmd有效）1set path=%path%;C:\Users\modi\Miniconda3\Scripts 如果像永久生效的话，命令改成下面这样的，用命令setx 1setx PATH "%PATH%;C:\Users\modi\Miniconda3\Scripts" 查看当前所有可用的环境变量1set 设置临时的环境变量1set temp = "D:\temp" 查看某个环境变量12345set %PATH%set temp = "D:\temp"set %tempecho %PATH%echo %TEMP%]]></content>
@@ -10,9 +40,13 @@
       </categories>
   </entry>
   <entry>
-    <title><![CDATA[diary180613]]></title>
-    <url>%2Fposts%2F8dd2cd76%2F</url>
-    <content type="text"><![CDATA[]]></content>
+    <title><![CDATA[情不知所起，一往而深]]></title>
+    <url>%2Fposts%2Fe4cc009%2F</url>
+    <content type="text"><![CDATA[“我会一直等到你变好的那天，如果你还没有变好，我只能等你一辈子了” “我喜欢抱着你，靠着你，躺在你怀里，也喜欢你愿意依靠我，抱着，趴着或躺着” 有时候这么想着想着，便想到了《牡丹亭》里的，“情不知所起，一往而深”， 想起了梁祝化蝶，想起了三毛荷西。 忘了为什么喜欢的哈尼了，说是忘了，也算不得忘了，一直以来就不知道为什么喜欢的哈尼。 就是喜欢了吧，说不出喜欢的原因。 说起这个，想起了陈绮贞的歌: 旅行的意义。 只是对说不出爱你的原因很有感触吧，其他的倒是不一样。列出来便是这样的了： 旅行的意义（陈绮贞，摘部分） 旅行的意义 （我们的） 你看过了许多美景 一起看过了许多美景 你看过了许多美女 一起看过了许多美女 你迷失再地图上每一道短暂的光阴 一起迷失在Python里每一段code上短暂的光阴 你品尝了夜的巴黎 一起品尝了夜的紫荆 你踏过下雪的北京 一起踏过下雪的园子 你熟记书本里每一句你最爱的真理 手机里记录着我爱你的每一道身影 却说不出你爱我的原因 说不出我爱你的原因 却说不出你欣赏我哪一种表情 只知道喜欢你的每一种表情 却说不出再什么场合我曾让你分心 只知道有你在的场合都让我安心]]></content>
+      <categories>
+        <category>杂谈</category>
+        <category>小日子</category>
+      </categories>
   </entry>
   <entry>
     <title><![CDATA[好用的学习应用]]></title>
@@ -51,7 +85,7 @@
   <entry>
     <title><![CDATA[2018观影清单]]></title>
     <url>%2Fposts%2F69343f66%2F</url>
-    <content type="text"><![CDATA[在这里会记录下自己看的影视剧，然后会有一些简短的评价吧，也可能没有。有一些影视可能没看过，不过脑子里突然想起来的，没怎么看的，也会放在列表里面记录下自己所见所闻吧。不知不觉写了那么多了。。。等之后再填坑（等书单list写完，我再看看） 院线电影 2018 超时空同居https://movie.douban.com/subject/27133303/和女朋友一起看的看得挺开心的 2018 复仇者联盟3: 无限战争https://movie.douban.com/subject/24773958/和男朋友一起看的和男朋友在一起开心 私人电影 1976 怪宴https://movie.douban.com/subject/1303545/ 1980 405谋杀案https://movie.douban.com/subject/1303698/ 1982 窈窕淑男 Tootsieshttps://movie.douban.com/subject/1297737/ 1995 非常嫌疑犯https://movie.douban.com/subject/1292214/ 2002 八美图https://movie.douban.com/subject/1299292/ 2002 猫的报恩https://movie.douban.com/subject/1304970/ 2014 记忆中的玛妮https://movie.douban.com/subject/25790555/ 2014&amp;2017 Paddington 1&amp;2https://movie.douban.com/subject/2998373/https://movie.douban.com/subject/26340419/ 2015 海街日记https://movie.douban.com/subject/25895901/ 2017 春宵苦短，少女前进吧https://movie.douban.com/subject/26935251/ 2017 Kingsman.The Golden Circlehttps://movie.douban.com/subject/26378579/ 电视剧 2018 贷款买个男朋友https://movie.douban.com/subject/30155216/ 2005&amp;2006 神秘博士 S1&amp;S2https://movie.douban.com/subject/1763834/https://movie.douban.com/subject/3634228/ 2001&amp;2003 重案六组 第一部&amp;第二部https://movie.douban.com/subject/2190981/https://movie.douban.com/subject/2190973/ 2004 案发现场 第一部https://movie.douban.com/subject/2347276/ 2004 Hustle S1https://movie.douban.com/subject/1763205/ 2014&amp;2015&amp;2017 废柴舅舅 S1~S3 2011 孔雀翎https://movie.douban.com/subject/5905773/ 2003 曼哈顿爱情故事https://movie.douban.com/subject/1480841/ 马普尔小姐探案 S4&amp;S5 2018 非自然死亡https://movie.douban.com/subject/27140017/ 2018 加油吧，威基基https://movie.douban.com/subject/27603684/ 2018 基督山伯爵 华丽的复仇 连载中https://movie.douban.com/subject/30140042/ 2018 使女的故事 S2 连载中https://movie.douban.com/subject/27036735/ 2018 9号秘事 S4https://movie.douban.com/subject/26961208/ 2017 黑镜 S4https://movie.douban.com/subject/26898192/ 2016 东京女子图鉴https://movie.douban.com/subject/26921674/ 1997~2014 Jonathan Creek S1~S5 2010 金牌女王https://movie.douban.com/subject/4845429/ 动画与番剧 2013&amp;2015&amp;2017 Rick and Morty S1~S3https://movie.douban.com/subject/11537954/https://movie.douban.com/subject/25865470/https://movie.douban.com/subject/26592971/ 2018 超能力女儿（连载中）https://movie.douban.com/subject/27140040/ 纪录片 2012 Indie Game: The Moviehttps://movie.douban.com/subject/7015793/ 2015 The Jinx: The Life and Deaths of Robert Dursthttps://movie.douban.com/subject/26292143/ 2018 书迷https://movie.douban.com/subject/30200070/其他 2015 看理想：一千零一夜https://movie.douban.com/subject/26314530/]]></content>
+    <content type="text"><![CDATA[在这里会记录下自己看的影视剧，然后会有一些简短的评价吧，也可能没有。有一些影视可能没看过，不过脑子里突然想起来的，没怎么看的，也会放在列表里面记录下自己所见所闻吧。不知不觉写了那么多了。。。等之后再填坑（等书单list写完，我再看看） 院线电影 2018 超时空同居https://movie.douban.com/subject/27133303/和女朋友一起看的看得挺开心的 2018 复仇者联盟3: 无限战争https://movie.douban.com/subject/24773958/和男朋友一起看的和男朋友在一起开心 私人电影 1976 怪宴https://movie.douban.com/subject/1303545/ 1980 405谋杀案https://movie.douban.com/subject/1303698/ 1982 窈窕淑男 Tootsieshttps://movie.douban.com/subject/1297737/ 1995 非常嫌疑犯https://movie.douban.com/subject/1292214/ 2002 八美图https://movie.douban.com/subject/1299292/ 2002 猫的报恩https://movie.douban.com/subject/1304970/ 2014 记忆中的玛妮https://movie.douban.com/subject/25790555/ 2014&amp;2017 Paddington 1&amp;2https://movie.douban.com/subject/2998373/https://movie.douban.com/subject/26340419/ 2015 海街日记https://movie.douban.com/subject/25895901/ 2017 春宵苦短，少女前进吧https://movie.douban.com/subject/26935251/ 2017 Kingsman.The Golden Circlehttps://movie.douban.com/subject/26378579/ 电视剧 2018 贷款买个男朋友https://movie.douban.com/subject/30155216/ 2005&amp;2006 神秘博士 S1&amp;S2https://movie.douban.com/subject/1763834/https://movie.douban.com/subject/3634228/ 2001&amp;2003 重案六组 第一部&amp;第二部https://movie.douban.com/subject/2190981/https://movie.douban.com/subject/2190973/ 2004 案发现场 第一部https://movie.douban.com/subject/2347276/ 2004 Hustle S1https://movie.douban.com/subject/1763205/ 2014&amp;2015&amp;2017 废柴舅舅 S1~S3 2011 孔雀翎https://movie.douban.com/subject/5905773/ 2003 曼哈顿爱情故事https://movie.douban.com/subject/1480841/ 马普尔小姐探案 S4&amp;S5 2018 非自然死亡https://movie.douban.com/subject/27140017/ 2018 加油吧，威基基https://movie.douban.com/subject/27603684/ 2018 基督山伯爵 华丽的复仇 连载中https://movie.douban.com/subject/30140042/ 2018 使女的故事 S2 连载中https://movie.douban.com/subject/27036735/ 2018 9号秘事 S4https://movie.douban.com/subject/26961208/ 2017 黑镜 S4https://movie.douban.com/subject/26898192/ 2016 东京女子图鉴https://movie.douban.com/subject/26921674/ 1997~2014 Jonathan Creek S1~S5 2010 金牌女王https://movie.douban.com/subject/4845429/ 大侦探波洛https://movie.douban.com/subject/2030879/零零散散挑了几集看。看到了Hustle里的Danny 和Stacie，Doctor Who 第一季里的Doctor，写着写着突然想起来，还有那个Doctor Who里面的那个叫啥的怪物来着。。一时忘了名字了。还有9号秘事里的主演。英剧的世界真是小呀。虽然相比于Poirot，更喜欢Jonathan里面的案子，Poirot太心理学了。感觉不讲证据，有点扯。但是Poirot还是很萌的。 不得不说，画得太胖了，胡子画得也不对，Poirot还是有头发得2333 动画与番剧 2013&amp;2015&amp;2017 Rick and Morty S1~S3https://movie.douban.com/subject/11537954/https://movie.douban.com/subject/25865470/https://movie.douban.com/subject/26592971/ 2018 超能力女儿（连载中）https://movie.douban.com/subject/27140040/ 纪录片 2012 Indie Game: The Moviehttps://movie.douban.com/subject/7015793/ 2015 The Jinx: The Life and Deaths of Robert Dursthttps://movie.douban.com/subject/26292143/ 2018 书迷https://movie.douban.com/subject/30200070/其他 2015 看理想：一千零一夜https://movie.douban.com/subject/26314530/]]></content>
       <categories>
         <category>项目</category>
         <category>清单</category>
