@@ -89,6 +89,13 @@ https://movie.douban.com/subject/5905773/
  17. 1997~2014 Jonathan Creek S1~S5
  18. 2010 金牌女王
 https://movie.douban.com/subject/4845429/
+19. 大侦探波洛
+https://movie.douban.com/subject/2030879/
+零零散散挑了几集看。看到了Hustle里的Danny 和Stacie，Doctor Who 第一季里的Doctor，写着写着突然想起来，还有那个Doctor Who里面的那个叫啥的怪物来着。。一时忘了名字了。还有9号秘事里的主演。英剧的世界真是小呀。虽然相比于Poirot，更喜欢Jonathan里面的案子，Poirot太心理学了。感觉不讲证据，有点扯。但是Poirot还是很萌的。
+
+![以前画的Poirot](http://p15ezcjt2.bkt.clouddn.com/小书匠/1529950631916.png)
+
+不得不说，画得太胖了，胡子画得也不对，Poirot还是有头发得2333
 
 #### 动画与番剧
 1. 2013&2015&2017 Rick and Morty S1~S3
