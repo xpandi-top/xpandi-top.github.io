@@ -355,12 +355,12 @@ han: false
 
 # Disqus
 disqus:
-  enable: false
-  shortname:
+  enable: true
+  shortname: xpandi
   count: true
 
 # Hypercomments
-hypercomments_id: 99040
+# hypercomments_id: 
 
 # changyan
 changyan:
