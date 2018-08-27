@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[My3kWords]]></title>
+    <url>%2Fposts%2Ff7edfc86%2F</url>
+    <content type="text"><![CDATA[拖了好久的背单词小程序，但是还没完全弄好。。anyway，先写着吧。程序：Pan叨叨：Di 使用方式1python NewNew3K.py 目前实现的功能 基本的GUI 选择从哪里开始背单词 单词星标 学习星标单词 键盘监听 还需要完善的东西字体很小，键盘使用诡异，数据库没有完全实现。 gui的界面和字体等 逻辑链条 添加menu global shuffle]]></content>
+      <categories>
+        <category>项目</category>
+        <category>背单词</category>
+      </categories>
+  </entry>
+  <entry>
     <title><![CDATA[一些自己感兴趣的数据库]]></title>
     <url>%2Fposts%2F14da436b%2F</url>
     <content type="text"><![CDATA[记录一些自己感兴趣的数据库 中华古诗词数据库http://shici.store/chinese-poetry/ AffectNet 数据库http://mohammadmahoor.com/affectnet/图片及情绪标注 HCI tagging 数据库https://mahnob-db.eu/hci-tagging/脑电，视频等]]></content>

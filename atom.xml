@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.xpandi.top/"/>
-  <updated>2018-08-27T15:08:16.163Z</updated>
+  <updated>2018-08-27T15:26:26.135Z</updated>
   <id>http://www.xpandi.top/</id>
   
   <author>
@@ -17,11 +17,33 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>My3kWords</title>
+    <link href="http://www.xpandi.top/posts/f7edfc86/"/>
+    <id>http://www.xpandi.top/posts/f7edfc86/</id>
+    <published>2018-08-27T15:19:11.000Z</published>
+    <updated>2018-08-27T15:26:26.135Z</updated>
+    
+    <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><p>拖了好久的背单词小程序，但是还没完全弄好。。<br>anyway，先写着吧。<br>程序：Pan<br>叨叨：Di<br><a id="more"></a></p><h3 id="使用方式"><a href="#使用方式" class="headerlink" title="使用方式"></a>使用方式</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python NewNew3K.py</span><br></pre></td></tr></table></figure><h3 id="目前实现的功能"><a href="#目前实现的功能" class="headerlink" title="目前实现的功能"></a>目前实现的功能</h3><ul><li>基本的GUI</li><li>选择从哪里开始背单词</li><li>单词星标</li><li>学习星标单词</li><li>键盘监听</li></ul><h3 id="还需要完善的东西"><a href="#还需要完善的东西" class="headerlink" title="还需要完善的东西"></a>还需要完善的东西</h3><p>字体很小，键盘使用诡异，数据库没有完全实现。</p><ul><li>gui的界面和字体等</li><li>逻辑链条</li><li>添加menu</li><li>global shuffle</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;拖了好久的背单词小程序，但是还没完全弄好。。&lt;br&gt;anyway，先写着吧。&lt;br&gt;程序：Pan&lt;br&gt;叨叨：Di&lt;br&gt;
+    
+    </summary>
+    
+      <category term="项目" scheme="http://www.xpandi.top/categories/%E9%A1%B9%E7%9B%AE/"/>
+    
+      <category term="背单词" scheme="http://www.xpandi.top/categories/%E9%A1%B9%E7%9B%AE/%E8%83%8C%E5%8D%95%E8%AF%8D/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>一些自己感兴趣的数据库</title>
     <link href="http://www.xpandi.top/posts/14da436b/"/>
     <id>http://www.xpandi.top/posts/14da436b/</id>
     <published>2018-08-27T14:55:20.000Z</published>
-    <updated>2018-08-27T15:08:16.163Z</updated>
+    <updated>2018-08-27T15:09:44.337Z</updated>
     
     <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><p>记录一些自己感兴趣的数据库<br><a id="more"></a></p><h4 id="中华古诗词数据库"><a href="#中华古诗词数据库" class="headerlink" title="中华古诗词数据库"></a>中华古诗词数据库</h4><p><a href="http://shici.store/chinese-poetry/" target="_blank" rel="noopener">http://shici.store/chinese-poetry/</a></p><h4 id="AffectNet-数据库"><a href="#AffectNet-数据库" class="headerlink" title="AffectNet 数据库"></a>AffectNet 数据库</h4><p><a href="http://mohammadmahoor.com/affectnet/" target="_blank" rel="noopener">http://mohammadmahoor.com/affectnet/</a><br>图片及情绪标注</p><h4 id="HCI-tagging-数据库"><a href="#HCI-tagging-数据库" class="headerlink" title="HCI tagging 数据库"></a>HCI tagging 数据库</h4><p><a href="https://mahnob-db.eu/hci-tagging/" target="_blank" rel="noopener">https://mahnob-db.eu/hci-tagging/</a><br>脑电，视频等</p>]]></content>
     
@@ -477,35 +499,6 @@
     
     
       <category term="图标" scheme="http://www.xpandi.top/tags/%E5%9B%BE%E6%A0%87/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2017秋日剧推荐</title>
-    <link href="http://www.xpandi.top/posts/9800a1d5/"/>
-    <id>http://www.xpandi.top/posts/9800a1d5/</id>
-    <published>2017-12-22T16:10:01.000Z</published>
-    <updated>2018-06-06T11:08:49.846Z</updated>
-    
-    <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><p>2017年，这一年看了三部日剧，觉得很有意思。在这里推荐一下；</p><p>《过保护的加穗子》，《成人高校》和《监狱里的公主大人》</p><p>都包含着成长着一个大的主题，分别侧重为，个人与家庭，亲密关系的发展，社会关系。（当然这只是我自己概括的）</p><p>正文就是我罗嗦的吐槽了。</p><a id="more"></a><h3 id="过保护的加穗子"><a href="#过保护的加穗子" class="headerlink" title="过保护的加穗子"></a>过保护的加穗子</h3><p>看这部片子的机缘是，在微博上看到了女主的照片，以及男女主之间的身高差。</p><p>觉得真是萌翻了，妹子好可爱呀！！于是便找来这部片子看.(看脸的人，没救了。)</p><p>其实这个设定很像之前的一部日剧《妈妈，我可以不做你的女儿吗》，与那部剧以诡异伦理为主的</p><ul><li>豆瓣链接：<a href="https://movie.douban.com/subject/27062635/" target="_blank" rel="noopener">https://movie.douban.com/subject/27062635/</a></li></ul><p>这部剧的整体比较轻松愉悦，轻松愉悦的而同时还能体会到成长的感觉。</p><p>以及女主真的很可爱啊。</p><h3 id="成人高校"><a href="#成人高校" class="headerlink" title="成人高校"></a>成人高校</h3><p>故事的设定是，政府为了降低少子化（我也不确定这样的表述对不对），秘密成立了一所成人高校，在全国挑选了一部分人入学。<br>这些学生都是30岁以上的处子。一旦破处就可以算是可以毕业。</p><p>剧中将几类人分到几个主角之上，摩擦与探索构建起了整个故事的架构。虽然后面有点崩，但是总体来说还是很有意思的</p><p>我觉得有意思的是，整个剧提到了两性关系与性的关系。</p><p>如何处理两性关系，如何对待性态度，这两个问题在长期的教育体系中是很缺失的。</p><p>想起百度的网页经常出现的“初中早恋怎么办”，从小到大，家长老师似乎都在默默地暗示，谈恋爱是一件危险的事情</p><p>转眼之间，30多岁时，便絮絮叨叨找不到男朋友或女朋友的事情。这么想想确实可笑。犯罪的案件中不少是由与情杀引起的</p><p>还有的是钱，钱也是个不好的东西？可是似乎又默默地暗示一切向钱看齐。我所说的这一些还并未找资料研究，仅凭我直观的感觉。</p><p>处理情或性有问题，应该是寻找解决或者调解的方式，一言不合就杀人，这是亲密关系能力的问题</p><ul><li>豆瓣链接：<a href="https://movie.douban.com/subject/27130295/" target="_blank" rel="noopener">https://movie.douban.com/subject/27130295/</a></li></ul><h3 id="监狱里的公主大人"><a href="#监狱里的公主大人" class="headerlink" title="监狱里的公主大人"></a>监狱里的公主大人</h3><p>监狱的公主大人看完了</p><p>意料之中的结局，然而仍然仍看得很感动</p><p>这是一个披着探案外衣的温情日剧。</p><p>在素不相识的监狱里相遇，为了一个无辜的公主，愿意为她而再次冒险。</p><p>看的时候，会想这样的一个问题，人究竟该为什么活着（最近时不时的会有这样的想法，喝杯水时都忍不住纠结）</p><p>某些程度上来说，人只要吃饱了喝足了便不会死，可是人的欲望不止，比如马斯洛的需要层次的理论</p><p>虽然知道最后的结局会是怎样，但是还是在坏人最后获得审判时，看着大妈们的脸上的表情而激动，太棒啦。</p><p>看着最后电视上的江户酸奶广告而表示欣慰。</p><ul><li>豆瓣链接：<a href="https://movie.douban.com/subject/27097746/" target="_blank" rel="noopener">https://movie.douban.com/subject/27097746/</a></li></ul><h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><p>觉得写评论还是一件挺难的事情的，纠结了许久也憋不出几句正常的话。不过怎么说呢。憋了那么久总算憋完了。</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;2017年，这一年看了三部日剧，觉得很有意思。在这里推荐一下；&lt;/p&gt;
-&lt;p&gt;《过保护的加穗子》，《成人高校》和《监狱里的公主大人》&lt;/p&gt;
-&lt;p&gt;都包含着成长着一个大的主题，分别侧重为，个人与家庭，亲密关系的发展，社会关系。（当然这只是我自己概括的）&lt;/p&gt;
-&lt;p&gt;正文就是我罗嗦的吐槽了。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="娱乐" scheme="http://www.xpandi.top/categories/%E5%A8%B1%E4%B9%90/"/>
-    
-      <category term="影视" scheme="http://www.xpandi.top/categories/%E5%A8%B1%E4%B9%90/%E5%BD%B1%E8%A7%86/"/>
-    
-    
-      <category term="日剧" scheme="http://www.xpandi.top/tags/%E6%97%A5%E5%89%A7/"/>
-    
-      <category term="2017秋" scheme="http://www.xpandi.top/tags/2017%E7%A7%8B/"/>
     
   </entry>
   
