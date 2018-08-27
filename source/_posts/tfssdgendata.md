@@ -5,9 +5,10 @@ categories:
   - Tensorflow
 copyright: true
 comments: true
-date: 2018-07-15 17:01:28
 tags: SSD
 author: Di
+abbrlink: 572e9c52
+date: 2018-07-15 17:01:28
 ---
 记录一下自己构建数据的一个流程
 

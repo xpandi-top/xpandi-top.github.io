@@ -5,9 +5,10 @@ categories:
   - 小日子
 copyright: true
 comments: true
+author: Di
+abbrlink: 867d7fcf
 date: 2018-08-26 23:51:00
 tags:
-author: Di
 ---
 我要背上吉他离开北方
 ——宋东野《斑马，斑马》
