@@ -5,9 +5,10 @@ categories:
   - 数据库
 copyright: true
 comments: true
+author: Di
+abbrlink: 14da436b
 date: 2018-08-27 22:55:20
 tags:
-author: Di
 ---
 记录一些自己感兴趣的数据库
 <!--more-->
