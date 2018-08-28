@@ -4,9 +4,10 @@ categories:
   - 文献
 copyright: true
 comments: true
-date: 2018-08-28 21:09:17
 tags: 历史，review
 author: Di
+abbrlink: 6cabab92
+date: 2018-08-28 21:09:17
 ---
 这篇文章就是一个介绍型的文章，介绍了构成现在的心里学的一些基石。文献比较长，里面介绍的几位大牛，都是在阅读文献中会尝尝看到的，比如Pearson（Pearson相关呀，第一个反应）。
 作为了解或者科普还是个不错的选择吧。
