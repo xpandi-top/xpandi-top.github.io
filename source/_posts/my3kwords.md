@@ -5,9 +5,10 @@ categories:
   - 背单词
 copyright: true
 comments: true
+author: Di & Pan
+abbrlink: f7edfc86
 date: 2018-08-27 23:19:11
 tags:
-author: Di & Pan
 ---
 拖了好久的背单词小程序，但是还没完全弄好。。
 anyway，先写着吧。
