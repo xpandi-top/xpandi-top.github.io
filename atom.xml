@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.xpandi.top/"/>
-  <updated>2018-08-28T13:17:33.417Z</updated>
+  <updated>2018-08-28T13:41:59.795Z</updated>
   <id>http://www.xpandi.top/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>图片小记</title>
+    <link href="http://www.xpandi.top/posts/21185e19/"/>
+    <id>http://www.xpandi.top/posts/21185e19/</id>
+    <published>2018-08-28T13:24:58.000Z</published>
+    <updated>2018-08-28T13:41:59.795Z</updated>
+    
+    <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><p>记录一些自己拍的觉得还可以的照片<br><a id="more"></a></p><h3 id="2018年8月28日"><a href="#2018年8月28日" class="headerlink" title="2018年8月28日"></a>2018年8月28日</h3><p>早上累了，总是对着电脑，觉得累了，便想着出去走走好了。<br>绕了一圈 图书馆，然后在水木附近的一处，看到了白蝴蝶。便在那里逗留了一会儿。想近距离地拍一拍蝴蝶，看着那儿有一只，便悄悄走过去，刚接近那蝴蝶便飞走了。我又换了个想法，不如等吧，如果我没有恶意，那蝴蝶也总会落到附近地地方的。等了一会儿，一只便落在自己身旁一朵花上，像电影里地慢动作一样，我把手机推进到那蝴蝶面前，心里念着，可别惊动了。不知道是那蝴蝶胆子大还是我动作轻，他竟然在那里待了很久。或者说那蝴蝶也知道镜头感？他煽动翅膀的时候恰巧便拍了这。<br>虽然说不上是多么奇妙的图片，但是在等待的时候，看到他在自己镜头下展翅的时候，心里还是激动不已的。<br>一路回来，发现蝴蝶还是不少的，这么一想，觉得自己好像很久没有再仔仔细细看生活了。<br>看着蝴蝶和花，想起了那句，留连戏蝶时时舞，自在娇莺恰恰啼。哈，还竟然真的有鸟叫声。</p><p><img src="http://p15ezcjt2.bkt.clouddn.com/小书匠/1535462848044.png" alt="留连戏蝶时时舞"></p><p><img src="http://p15ezcjt2.bkt.clouddn.com/小书匠/1535463633938.png" alt="绽放"></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;记录一些自己拍的觉得还可以的照片&lt;br&gt;
+    
+    </summary>
+    
+      <category term="杂记" scheme="http://www.xpandi.top/categories/%E6%9D%82%E8%AE%B0/"/>
+    
+      <category term="小日子" scheme="http://www.xpandi.top/categories/%E6%9D%82%E8%AE%B0/%E5%B0%8F%E6%97%A5%E5%AD%90/"/>
+    
+    
+      <category term="摄影" scheme="http://www.xpandi.top/tags/%E6%91%84%E5%BD%B1/"/>
+    
+  </entry>
   
   <entry>
     <title>信息处理：在信息时代认知心理学的语言及分析工具</title>
@@ -473,30 +497,6 @@
       <category term="截图" scheme="http://www.xpandi.top/tags/%E6%88%AA%E5%9B%BE/"/>
     
       <category term="鼠标模拟" scheme="http://www.xpandi.top/tags/%E9%BC%A0%E6%A0%87%E6%A8%A1%E6%8B%9F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo的NexT主题优化</title>
-    <link href="http://www.xpandi.top/posts/d4772490/"/>
-    <id>http://www.xpandi.top/posts/d4772490/</id>
-    <published>2017-12-24T12:27:33.000Z</published>
-    <updated>2018-06-06T11:08:49.924Z</updated>
-    
-    <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><p>记一下自己折腾hexo时候做的事情吧。也方便各位参考。<br><a id="more"></a><br>挖个坑，找机会填</p><h1 id="修改页面背景"><a href="#修改页面背景" class="headerlink" title="修改页面背景"></a>修改页面背景</h1><h1 id="修改menu图标"><a href="#修改menu图标" class="headerlink" title="修改menu图标"></a>修改menu图标</h1><h1 id="添加-categories，tags，about"><a href="#添加-categories，tags，about" class="headerlink" title="添加 categories，tags，about"></a>添加 categories，tags，about</h1><h1 id="添加版权"><a href="#添加版权" class="headerlink" title="添加版权"></a>添加版权</h1><h1 id="修改底部信息"><a href="#修改底部信息" class="headerlink" title="修改底部信息"></a>修改底部信息</h1><h1 id="添加自定义分类"><a href="#添加自定义分类" class="headerlink" title="添加自定义分类"></a>添加自定义分类</h1><h1 id="修改首页样式（还没做）"><a href="#修改首页样式（还没做）" class="headerlink" title="修改首页样式（还没做）"></a>修改首页样式（还没做）</h1><h1 id="添加sitemap和搜索引擎（还没做）"><a href="#添加sitemap和搜索引擎（还没做）" class="headerlink" title="添加sitemap和搜索引擎（还没做）"></a>添加sitemap和搜索引擎（还没做）</h1><h1 id="添加评论"><a href="#添加评论" class="headerlink" title="添加评论"></a>添加评论</h1><h1 id="添加星标"><a href="#添加星标" class="headerlink" title="添加星标"></a>添加星标</h1><h1 id="添加字数统计与访问量"><a href="#添加字数统计与访问量" class="headerlink" title="添加字数统计与访问量"></a>添加字数统计与访问量</h1><h1 id="修改标签-符号"><a href="#修改标签-符号" class="headerlink" title="修改标签#符号"></a>修改标签#符号</h1><h1 id="添加社交链接"><a href="#添加社交链接" class="headerlink" title="添加社交链接"></a>添加社交链接</h1>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;记一下自己折腾hexo时候做的事情吧。也方便各位参考。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="技术" scheme="http://www.xpandi.top/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-      <category term="博客" scheme="http://www.xpandi.top/categories/%E6%8A%80%E6%9C%AF/%E5%8D%9A%E5%AE%A2/"/>
-    
-    
-      <category term="hexo" scheme="http://www.xpandi.top/tags/hexo/"/>
     
   </entry>
   
