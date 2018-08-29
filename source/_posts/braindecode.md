@@ -3,8 +3,8 @@ title: Deep leaning处理EEG数据-braindecode工具箱
 copyright: true
 comments: true
 categories: 
-    - 项目
-    - 心理学
+    - 技术
+    - 工具箱
 tags:
     - braindecode
     - eeg

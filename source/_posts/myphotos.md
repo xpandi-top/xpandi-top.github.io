@@ -1,13 +1,14 @@
 ---
 title: 图片小记
 categories:
-  - 杂记
+  - 杂谈
   - 小日子
 copyright: true
 comments: true
-date: 2018-08-28 21:24:58
 tags: 摄影
 author: Di
+abbrlink: '21185e19'
+date: 2018-08-28 21:24:58
 ---
 记录一些自己拍的觉得还可以的照片
 <!--more-->
