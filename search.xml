@@ -68,7 +68,7 @@
     <content type="text"><![CDATA[家里的几个小孩子高考结束了，不由得想起当时的自己。今天在想如何帮助小孩子们填报志愿，我觉得比填报更重要的是人生的规划，或者说是明白自己该如何的生活。如今的自己也没有想得很明白，究竟应该如何地活着。长期的教育以来，职业规划，人生规划非常的缺乏。所有人都按部就班的走着，走到了某个点，于是一下子便放手了。在父母那一代的日子里，多是为了生活而奋斗，多是为了温饱而努力。现在今非昔比了，我想人都是需要一点梦想或者追求的。人生的追求与思考从来不是说上了大学之后才开始的，而应该是人从小到大的不断探索。所谓未来是什么呢，是某个时间点，还是只是人为所定义的期望。说这些话简直不着逻辑。其实也不知道该说些什么，只是突然想写写东西而已。对于自己而言，今天算是迈出了重要的第一步，然而心里还是很慌张。即便如此，也不知道之后如何。今天的事实证明我太过焦虑了：在之前拼命地想着，如果别人不相信我怎么办。然而一想到有一些事情即将广而告之，便也觉得戚戚然。虽然也算不上什么大事，只是不由得难过了起来。忘了把东西放到哪里了。。。感觉很烦躁。。。邋邋遢遢的毛病该改改了。。。]]></content>
       <categories>
         <category>杂谈</category>
-        <category>日记</category>
+        <category>小日子</category>
       </categories>
   </entry>
   <entry>
@@ -177,8 +177,8 @@
     <url>%2Fposts%2Fc786e694%2F</url>
     <content type="text"><![CDATA[最近在看braindecode的github文档，简单地做一下笔记记录，如果有需要可以随时查看 pytorch官网没有windows的安装方式，所以为了之后省事，所以改用ubuntu 文档链接 必要的环境安装 anaconda 从官网下载安装即可，由于涉及到EEG处理等心理学的工具箱，目前这些工具箱还没支持python3 所以需要有python2的环境，选择安装python2版本的或者是装2和3两个版本 numpy conda装numpy，如果没有就装一下好了 mne 脑电处理的python工具包 pytorch pytorch官网http://pytorch.org/选择需要的安装包，下载，在conda下安装(在windows下装好像还很麻烦。。。) braindecode 未完待续]]></content>
       <categories>
-        <category>项目</category>
-        <category>心理学</category>
+        <category>技术</category>
+        <category>工具箱</category>
       </categories>
       <tags>
         <tag>braindecode</tag>

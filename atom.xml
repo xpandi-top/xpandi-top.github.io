@@ -158,7 +158,7 @@
     <link href="http://www.xpandi.top/posts/a53215a7/"/>
     <id>http://www.xpandi.top/posts/a53215a7/</id>
     <published>2018-06-25T15:20:59.000Z</published>
-    <updated>2018-08-26T15:48:45.129Z</updated>
+    <updated>2018-08-29T08:29:45.543Z</updated>
     
     <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><p>家里的几个小孩子高考结束了，不由得想起当时的自己。<br>今天在想如何帮助小孩子们填报志愿，我觉得比填报更重要的是人生的规划，或者说是明白自己该如何的生活。<br>如今的自己也没有想得很明白，究竟应该如何地活着。<br>长期的教育以来，职业规划，人生规划非常的缺乏。所有人都按部就班的走着，走到了某个点，于是一下子便放手了。<br>在父母那一代的日子里，多是为了生活而奋斗，多是为了温饱而努力。现在今非昔比了，我想人都是需要一点梦想或者追求的。人生的追求与思考从来不是说上了大学之后才开始的，而应该是人从小到大的不断探索。<br>所谓未来是什么呢，是某个时间点，还是只是人为所定义的期望。<br>说这些话简直不着逻辑。<br>其实也不知道该说些什么，只是突然想写写东西而已。<br>对于自己而言，今天算是迈出了重要的第一步，然而心里还是很慌张。即便如此，也不知道之后如何。<br>今天的事实证明我太过焦虑了：在之前拼命地想着，如果别人不相信我怎么办。<br>然而一想到有一些事情即将广而告之，便也觉得戚戚然。虽然也算不上什么大事，只是不由得难过了起来。<br>忘了把东西放到哪里了。。。<br>感觉很烦躁。。。<br>邋邋遢遢的毛病该改改了。。。</p>]]></content>
     
@@ -173,7 +173,7 @@
     
       <category term="杂谈" scheme="http://www.xpandi.top/categories/%E6%9D%82%E8%B0%88/"/>
     
-      <category term="日记" scheme="http://www.xpandi.top/categories/%E6%9D%82%E8%B0%88/%E6%97%A5%E8%AE%B0/"/>
+      <category term="小日子" scheme="http://www.xpandi.top/categories/%E6%9D%82%E8%B0%88/%E5%B0%8F%E6%97%A5%E5%AD%90/"/>
     
     
   </entry>
@@ -395,7 +395,7 @@
     <link href="http://www.xpandi.top/posts/c786e694/"/>
     <id>http://www.xpandi.top/posts/c786e694/</id>
     <published>2017-12-30T17:48:03.000Z</published>
-    <updated>2018-06-06T11:08:49.889Z</updated>
+    <updated>2018-08-29T08:28:52.911Z</updated>
     
     <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><p>最近在看braindecode的github文档，简单地做一下笔记记录，如果有需要可以随时查看</p><p>pytorch官网没有windows的安装方式，所以为了之后省事，所以改用ubuntu<br><a id="more"></a></p><p><a href="https://robintibor.github.io/braindecode/index.html" target="_blank" rel="noopener">文档链接</a></p><h3 id="必要的环境安装"><a href="#必要的环境安装" class="headerlink" title="必要的环境安装"></a>必要的环境安装</h3><ul><li>anaconda</li></ul><p>从官网下载安装即可，由于涉及到EEG处理等心理学的工具箱，目前这些工具箱还没支持python3</p><p>所以需要有python2的环境，选择安装python2版本的或者是装2和3两个版本</p><ul><li>numpy</li></ul><p>conda装numpy，如果没有就装一下好了</p><ul><li>mne</li></ul><p>脑电处理的python工具包</p><ul><li>pytorch</li></ul><p>pytorch官网<a href="http://pytorch.org/选择需要的安装包，下载，在conda下安装(在windows下装好像还很麻烦。。。" target="_blank" rel="noopener">http://pytorch.org/选择需要的安装包，下载，在conda下安装(在windows下装好像还很麻烦。。。</a>)</p><ul><li>braindecode</li></ul><h3 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续"></a>未完待续</h3>]]></content>
     
@@ -406,9 +406,9 @@
     
     </summary>
     
-      <category term="项目" scheme="http://www.xpandi.top/categories/%E9%A1%B9%E7%9B%AE/"/>
+      <category term="技术" scheme="http://www.xpandi.top/categories/%E6%8A%80%E6%9C%AF/"/>
     
-      <category term="心理学" scheme="http://www.xpandi.top/categories/%E9%A1%B9%E7%9B%AE/%E5%BF%83%E7%90%86%E5%AD%A6/"/>
+      <category term="工具箱" scheme="http://www.xpandi.top/categories/%E6%8A%80%E6%9C%AF/%E5%B7%A5%E5%85%B7%E7%AE%B1/"/>
     
     
       <category term="braindecode" scheme="http://www.xpandi.top/tags/braindecode/"/>
