@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="趁着有空，把最近常用的／新学到的关于linux的命令整理出来。第一波：grep。">
+<meta name="description" content="把最近学到的工具整理一下：grep, cut, paste, join。更厉害的sed, awk, regex还是单开文章来写吧。">
 <meta name="keywords" content="linux">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Linux命令grep">
+<meta property="og:title" content="Linux字符处理">
 <meta property="og:url" content="http://www.xpandi.top/posts/8cd3a42b/index.html">
 <meta property="og:site_name" content="Di&amp;Pan的博客">
-<meta property="og:description" content="趁着有空，把最近常用的／新学到的关于linux的命令整理出来。第一波：grep。">
+<meta property="og:description" content="把最近学到的工具整理一下：grep, cut, paste, join。更厉害的sed, awk, regex还是单开文章来写吧。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-06-04T08:33:08.810Z">
+<meta property="og:updated_time" content="2018-09-10T15:01:05.517Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Linux命令grep">
-<meta name="twitter:description" content="趁着有空，把最近常用的／新学到的关于linux的命令整理出来。第一波：grep。">
+<meta name="twitter:title" content="Linux字符处理">
+<meta name="twitter:description" content="把最近学到的工具整理一下：grep, cut, paste, join。更厉害的sed, awk, regex还是单开文章来写吧。">
 
 
 
@@ -128,7 +128,7 @@
 
 
 
-  <title>Linux命令grep | Di&Pan的博客</title>
+  <title>Linux字符处理 | Di&Pan的博客</title>
   
 
 
@@ -356,7 +356,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Linux命令grep</h1>
+          <h1 class="post-title" itemprop="name headline">Linux字符处理</h1>
         
 
         <div class="post-meta">
@@ -370,8 +370,8 @@
                 <i class="fa fa-calendar-check-o"></i>
               </span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-06-04T16:33:08+08:00">
-                2018-06-04
+              <time title="更新于" itemprop="dateModified" datetime="2018-09-10T23:01:05+08:00">
+                2018-09-10
               </time>
             
           </span>
@@ -445,7 +445,7 @@
                 </span>
                 
                 <span title="字数统计">
-                  133
+                  348
                 </span>
               
 
@@ -470,8 +470,12 @@
       
 
       
-        <script src="\assets\js\APlayer.min.js"> </script><p>趁着有空，把最近常用的／新学到的关于linux的命令整理出来。第一波：grep。<br><a id="more"></a><br>grep 是一个非常常用的，查询／匹配用的命令。<br>基本用法：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep apple test.txt</span><br></pre></td></tr></table></figure></p>
-<p>参数含义：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ man grep </span><br><span class="line">     grep [-abcdDEFGHhIiJLlmnOopqRSsUVvwxZ] [-A num] [-B num] [-C[num]]</span><br><span class="line">          [-e pattern] [-f file] [--binary-files=value] [--color[=when]]</span><br><span class="line">          [--colour[=when]] [--context[=num]] [--label] [--line-buffered]</span><br><span class="line">          [--null] [pattern] [file ...]</span><br></pre></td></tr></table></figure></p>
+        <script src="\assets\js\APlayer.min.js"> </script><p>把最近学到的工具整理一下：grep, cut, paste, join。<br>更厉害的sed, awk, regex还是单开文章来写吧。<br><a id="more"></a></p>
+<h3 id="cut"><a href="#cut" class="headerlink" title="cut"></a>cut</h3><p><code>cut</code>的作用是从文件中按列取内容。<br>参数：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">-f  按field取列。</span><br><span class="line">-d  分隔符，用于指示文件以什么分列，默认为tab。与-f配合使用。</span><br><span class="line">-c  按字符数取列。</span><br></pre></td></tr></table></figure></p>
+<p>示例：（就用手边的一个bed文件做例子）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"># 原始文件内容</span><br><span class="line">head text.bed</span><br><span class="line">chr1	2090	2475</span><br><span class="line">chr1	2584	3083</span><br><span class="line">chr1	4692	4832</span><br><span class="line">chr1	4692	5658</span><br><span class="line">chr1	4901	5658</span><br><span class="line">chr1	5805	6469</span><br><span class="line">chr1	5810	6469</span><br><span class="line">chr1	6628	6716</span><br><span class="line">chr1	6628	6720</span><br><span class="line">chr1	6628	6738</span><br><span class="line"></span><br><span class="line">#某些字符的列</span><br><span class="line">cut -c 1-2,6-9 text.bed | head</span><br><span class="line">ch090</span><br><span class="line">ch584</span><br><span class="line">ch692</span><br><span class="line">ch692</span><br><span class="line">ch901</span><br><span class="line">ch805</span><br><span class="line">ch810</span><br><span class="line">ch628</span><br><span class="line">ch628</span><br><span class="line">ch628</span><br><span class="line"></span><br><span class="line"># 第2列内容</span><br><span class="line">cut -f2 text.bed | head</span><br><span class="line">2090</span><br><span class="line">2584</span><br><span class="line">4692</span><br><span class="line">4692</span><br><span class="line">4901</span><br><span class="line">5805</span><br><span class="line">5810</span><br><span class="line">6628</span><br><span class="line">6628</span><br><span class="line">6628</span><br></pre></td></tr></table></figure></p>
+<h3 id="paste"><a href="#paste" class="headerlink" title="paste"></a><code>paste</code></h3><p>paste顾名思义就是把内容“粘贴”起来。</p>
+<h3 id="join"><a href="#join" class="headerlink" title="join"></a><code>join</code></h3><h3 id="grep"><a href="#grep" class="headerlink" title="grep"></a><code>grep</code></h3><p>grep 是一个非常常用的，查询／匹配用的命令。<br>基本用法：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep apple test.txt</span><br></pre></td></tr></table></figure></p>
+<p>参数含义：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ man grep</span><br><span class="line">     grep [-abcdDEFGHhIiJLlmnOopqRSsUVvwxZ] [-A num] [-B num] [-C[num]]</span><br><span class="line">          [-e pattern] [-f file] [--binary-files=value] [--color[=when]]</span><br><span class="line">          [--colour[=when]] [--context[=num]] [--label] [--line-buffered]</span><br><span class="line">          [--null] [pattern] [file ...]</span><br></pre></td></tr></table></figure></p>
 <p>小技巧：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># match tab in grep 匹配制表符</span></span><br><span class="line">grep apple$<span class="string">'\t'</span> test.txt</span><br><span class="line"></span><br><span class="line"><span class="comment"># logic and in grep 逻辑与</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># logic or in grep 逻辑或</span></span><br></pre></td></tr></table></figure></p>
 <p>未完待续…</p>
 
@@ -519,11 +523,11 @@
         <ul class="post-copyright">
   <li class="post-copyright-author">
     <strong>本文作者：</strong>
-    Di&Pan
+    Pan
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://www.xpandi.top/posts/8cd3a42b/" title="Linux命令grep">http://www.xpandi.top/posts/8cd3a42b/</a>
+    <a href="http://www.xpandi.top/posts/8cd3a42b/" title="Linux字符处理">http://www.xpandi.top/posts/8cd3a42b/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -651,8 +655,17 @@ var jiathis_config={
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -667,7 +680,7 @@ var jiathis_config={
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">30</span>
+                  <span class="site-state-item-count">34</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -689,7 +702,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">30</span>
+                  <span class="site-state-item-count">32</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -741,6 +754,22 @@ var jiathis_config={
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#cut"><span class="nav-number">1.</span> <span class="nav-text">cut</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#paste"><span class="nav-number">2.</span> <span class="nav-text">paste</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#join"><span class="nav-number">3.</span> <span class="nav-text">join</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#grep"><span class="nav-number">4.</span> <span class="nav-text">grep</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
         <div class="back-to-top">
@@ -773,7 +802,7 @@ var jiathis_config={
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="全站字数统计">18.2k</span>
+    <span title="全站字数统计">22.1k</span>
   
 </div>
 
@@ -908,7 +937,7 @@ var jiathis_config={
         var disqus_config = function () {
           this.page.url = 'http://www.xpandi.top/posts/8cd3a42b/';
           this.page.identifier = 'posts/8cd3a42b/';
-          this.page.title = 'Linux命令grep';
+          this.page.title = 'Linux字符处理';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://xpandi.disqus.com/embed.js';

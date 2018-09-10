@@ -1,0 +1,1624 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="vyZg2bgQcORUoXauvFW-Y8GALbrL2n0Ckk8LsaE95hI" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/bat-logo-32.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/bat-logo-16.png?v=5.1.3">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.3" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="linux," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="wget和curl是在linux下下载文件最常用的两个工具。">
+<meta name="keywords" content="linux">
+<meta property="og:type" content="article">
+<meta property="og:title" content="用wget和curl下载文件">
+<meta property="og:url" content="http://www.xpandi.top/posts/bec7b859/index.html">
+<meta property="og:site_name" content="Di&amp;Pan的博客">
+<meta property="og:description" content="wget和curl是在linux下下载文件最常用的两个工具。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-09-10T15:01:05.505Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="用wget和curl下载文件">
+<meta name="twitter:description" content="wget和curl是在linux下下载文件最常用的两个工具。">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.3',
+    sidebar: {"position":"left","display":"post","offset":20,"b2t":true,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: 'undefined',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://www.xpandi.top/posts/bec7b859/"/>
+
+
+
+
+
+  <title>用wget和curl下载文件 | Di&Pan的博客</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Di&Pan的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">两只猪的不学习日记</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user-circle"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tech">
+          <a href="/categories/技术/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-linux"></i> <br />
+            
+            技术
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-entertainment">
+          <a href="/categories/娱乐/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-gamepad"></i> <br />
+            
+            娱乐
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-literature">
+          <a href="/categories/文献/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-file"></i> <br />
+            
+            文献
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-projects">
+          <a href="/categories/项目/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br />
+            
+            项目
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-resources">
+          <a href="/categories/资源/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            资源
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-bars"></i> <br />
+            
+            全部分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.xpandi.top/posts/bec7b859/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Di&Pan">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Di&Pan的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">用wget和curl下载文件</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2018-09-10T23:01:05+08:00">
+                2018-09-10
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/技术/" itemprop="url" rel="index">
+                    <span itemprop="name">技术</span>
+                  </a>
+                </span>
+
+                
+                
+                  >
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/技术/linux/" itemprop="url" rel="index">
+                    <span itemprop="name">linux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/posts/bec7b859/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="posts/bec7b859/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-eye"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                  <span class="post-meta-divider">|</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-i-cursor"></i>
+                </span>
+                
+                <span title="字数统计">
+                  2,699
+                </span>
+              
+
+              
+
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <script src="\assets\js\APlayer.min.js"> </script><p>wget和curl是在linux下下载文件最常用的两个工具。<br><a id="more"></a><br>先说wget。<br>wget有如下几个特点：</p>
+<ol>
+<li>支持http，https，ftp协议。可以使用http代理。</li>
+<li>在带宽不高的网络中表现优异。</li>
+<li>支持后台自动下载，下载时不用一直盯着看。</li>
+<li>可以递归的下载整个站点。</li>
+</ol>
+<p>基本用法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget [option] URL</span><br></pre></td></tr></table></figure></p>
+<p>常用的几个例子<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">wget www.this.is/a/url</span><br><span class="line">#下载网站的首页</span><br><span class="line">wget -r www.this.is/a/url</span><br><span class="line">#递归的下载整个网站。所有被引用的链接也会被下载。</span><br><span class="line">wget -r -l1 -nd www.this.is/a/url</span><br><span class="line">#递归的同时限定递归深度为1，同时不创建文件夹，所有的文件会被存在工作路径下</span><br><span class="line">wget -c -t10 -T10 www.this.is/a/url</span><br><span class="line">#-c表示断点续传（默认是开启的） -t表示断线重连的尝试次数，0代表无穷。-T表示超时的秒数，-T10表示超过10秒无相应就视为超时。</span><br><span class="line">wget -A &quot;ABC*.avi&quot; www.this.is/a/url</span><br><span class="line">#只下载文件名以ABC开头的视频文件</span><br><span class="line">wget --reject=gif www.this.is/a/url</span><br><span class="line">#下载除gif文件外的所有文件</span><br><span class="line">wget -O out -o log www.this.is/a/url</span><br><span class="line">#文件下载到out，日志记录到log</span><br><span class="line">wget -i urls.txt</span><br><span class="line">#下载urls.txt中的url，每行一个url。</span><br><span class="line"></span><br><span class="line">curl -o home.html  www.this.is/a/url</span><br><span class="line">#抓取页面内容到一个文件中  </span><br><span class="line">curl -O out.html www.this.is/a/url/[0-9][0-9]/aaaaa.jpg  </span><br><span class="line"># curl的url里面支持正则表达式</span><br><span class="line">curl -r 0-100 -o img.part1 www.this.is/a/url/sample.jpg  </span><br><span class="line">curl -r 100-200 -o img.part2 www.this.is/a/url/sample.jpg  </span><br><span class="line">curl -r 200- -o img.part3 www.this.is/a/url/sample.jpg  </span><br><span class="line">#分段下载</span><br></pre></td></tr></table></figure></p>
+<p>wget的速查表：</p>
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-V,  –version</td>
+<td>显示wget的版本后退出</td>
+</tr>
+<tr>
+<td>-h,  –help</td>
+<td>打印语法帮助</td>
+</tr>
+<tr>
+<td>-b,  –background</td>
+<td>启动后转入后台执行</td>
+</tr>
+<tr>
+<td>-e,  –execute=COMMAND</td>
+<td>执行<code>.wgetrc</code>格式的命令，<code>wgetrc</code>格式参见/etc/wgetrc或~/.wgetrc</td>
+</tr>
+<tr>
+<td>-o,  –output-file=FILE</td>
+<td>把记录写到FILE文件中</td>
+</tr>
+<tr>
+<td>-a,  –append-output=FILE</td>
+<td>把记录追加到FILE文件中</td>
+</tr>
+<tr>
+<td>-d,  –debug</td>
+<td>打印调试输出</td>
+</tr>
+<tr>
+<td>-q,  –quiet</td>
+<td>安静模式(没有输出)</td>
+</tr>
+<tr>
+<td>-v,  –verbose</td>
+<td>冗长模式(这是缺省设置)</td>
+</tr>
+<tr>
+<td>-nv, –non-verbose</td>
+<td>关掉冗长模式，但不是安静模式</td>
+</tr>
+<tr>
+<td>-i,  –input-file=FILE</td>
+<td>下载在FILE文件中出现的URLs</td>
+</tr>
+<tr>
+<td>-F,  –force-html</td>
+<td>把输入文件当作HTML格式文件对待</td>
+</tr>
+<tr>
+<td>-B,  –base=URL</td>
+<td>将URL作为在-F -i参数指定的文件中出现的相对链接的前缀</td>
+</tr>
+<tr>
+<td>–sslcertfile=FILE</td>
+<td>可选客户端证书</td>
+</tr>
+<tr>
+<td>–sslcertkey=KEYFILE</td>
+<td>可选客户端证书的KEYFILE</td>
+</tr>
+<tr>
+<td>–egd-file=FILE</td>
+<td>指定EGD socket的文件名</td>
+</tr>
+<tr>
+<td>–bind-address=ADDRESS</td>
+<td>指定本地使用地址(主机名或IP，当本地有多个IP或名字时使用)</td>
+</tr>
+<tr>
+<td>-t,  –tries=NUMBER</td>
+<td>设定最大尝试链接次数(0 表示无限制).</td>
+</tr>
+<tr>
+<td>-O   –output-document=FILE</td>
+<td>把文档写到FILE文件中</td>
+</tr>
+<tr>
+<td>-nc, –no-clobber</td>
+<td>不要覆盖存在的文件或使用.#前缀</td>
+</tr>
+<tr>
+<td>-c,  –continue</td>
+<td>接着下载没下载完的文件</td>
+</tr>
+<tr>
+<td>–progress=TYPE</td>
+<td>设定进程条标记</td>
+</tr>
+<tr>
+<td>-N,  –timestamping</td>
+<td>不要重新下载文件除非比本地文件新</td>
+</tr>
+<tr>
+<td>-S,  –server-response</td>
+<td>打印服务器的回应</td>
+</tr>
+<tr>
+<td>–spider</td>
+<td>不下载任何东西</td>
+</tr>
+<tr>
+<td>-T,  –timeout=SECONDS</td>
+<td>设定响应超时的秒数</td>
+</tr>
+<tr>
+<td>-w,  –wait=SECONDS</td>
+<td>两次尝试之间间隔SECONDS秒</td>
+</tr>
+<tr>
+<td>–waitretry=SECONDS</td>
+<td>在重新链接之间等待1…SECONDS秒</td>
+</tr>
+<tr>
+<td>–random-wait</td>
+<td>在下载之间等待0…2*WAIT秒</td>
+</tr>
+<tr>
+<td>-Y,  –proxy=on/off</td>
+<td>打开或关闭代理</td>
+</tr>
+<tr>
+<td>-Q,  –quota=NUMBER</td>
+<td>设置下载的容量限制</td>
+</tr>
+<tr>
+<td>–limit-rate=RATE</td>
+<td>限定下载输率</td>
+</tr>
+<tr>
+<td>-nd  –no-directories</td>
+<td>不创建目录</td>
+</tr>
+<tr>
+<td>-x,  –force-directories</td>
+<td>强制创建目录</td>
+</tr>
+<tr>
+<td>-nH, –no-host-directories</td>
+<td>不创建主机目录</td>
+</tr>
+<tr>
+<td>-P,  –directory-prefix=PREFIX</td>
+<td>将文件保存到目录 PREFIX/…</td>
+</tr>
+<tr>
+<td>–cut-dirs=NUMBER</td>
+<td>忽略 NUMBER层远程目录</td>
+</tr>
+<tr>
+<td>–http-user=USER</td>
+<td>设定HTTP用户名为 USER.</td>
+</tr>
+<tr>
+<td>–http-passwd=PASS</td>
+<td>设定http密码为 PASS.</td>
+</tr>
+<tr>
+<td>-C,  –cache=on/off</td>
+<td>允许/不允许服务器端的数据缓存 (一般情况下允许).</td>
+</tr>
+<tr>
+<td>-E,  –html-extension</td>
+<td>将所有text/html文档以.html扩展名保存</td>
+</tr>
+<tr>
+<td>–ignore-length</td>
+<td>忽略 <code>Content-Length</code>头域</td>
+</tr>
+<tr>
+<td>–header=STRING</td>
+<td>在headers中插入字符串 STRING</td>
+</tr>
+<tr>
+<td>–proxy-user=USER</td>
+<td>设定代理的用户名为 USER</td>
+</tr>
+<tr>
+<td>–proxy-passwd=PASS</td>
+<td>设定代理的密码为 PASS</td>
+</tr>
+<tr>
+<td>–referer=URL</td>
+<td>在HTTP请求中包含 <code>Referer: URL</code>头</td>
+</tr>
+<tr>
+<td>-s,  –save-headers</td>
+<td>保存HTTP头到文件</td>
+</tr>
+<tr>
+<td>-U,  –user-agent=AGENT</td>
+<td>设定代理的名称为 AGENT而不是 Wget/VERSION.</td>
+</tr>
+<tr>
+<td>–no-http-keep-alive</td>
+<td>关闭 HTTP活动链接 (永远链接).</td>
+</tr>
+<tr>
+<td>–cookies=off</td>
+<td>不使用 cookies.</td>
+</tr>
+<tr>
+<td>–load-cookies=FILE</td>
+<td>在开始会话前从文件 FILE中加载cookie</td>
+</tr>
+<tr>
+<td>–save-cookies=FILE</td>
+<td>在会话结束后将 cookies保存到 FILE文件中</td>
+</tr>
+<tr>
+<td>-nr, –dont-remove-listing</td>
+<td>不移走 <code>.listing</code>文件</td>
+</tr>
+<tr>
+<td>-g,  –glob=on/off</td>
+<td>打开或关闭文件名的 globbing机制</td>
+</tr>
+<tr>
+<td>–passive-ftp</td>
+<td>使用被动传输模式 (缺省值).</td>
+</tr>
+<tr>
+<td>–active-ftp</td>
+<td>使用主动传输模式</td>
+</tr>
+<tr>
+<td>–retr-symlinks</td>
+<td>在递归的时候，将链接指向文件(而不是目录)</td>
+</tr>
+<tr>
+<td>-r,  –recursive</td>
+<td>递归下载－－慎用!</td>
+</tr>
+<tr>
+<td>-l,  –level=NUMBER</td>
+<td>最大递归深度 (inf 或 0 代表无穷).</td>
+</tr>
+<tr>
+<td>–delete-after</td>
+<td>在现在完毕后局部删除文件</td>
+</tr>
+<tr>
+<td>-k,  –convert-links</td>
+<td>转换非相对链接为相对链接</td>
+</tr>
+<tr>
+<td>-K,  –backup-converted</td>
+<td>在转换文件X之前，将之备份为 X.orig</td>
+</tr>
+<tr>
+<td>-m,  –mirror</td>
+<td>等价于 -r -N -l inf -nr.</td>
+</tr>
+<tr>
+<td>-p,  –page-requisites</td>
+<td>下载显示HTML文件的所有图片</td>
+</tr>
+<tr>
+<td>-A,  –accept=LIST</td>
+<td>分号分隔的被接受扩展名的列表</td>
+</tr>
+<tr>
+<td>-R,  –reject=LIST</td>
+<td>分号分隔的不被接受的扩展名的列表</td>
+</tr>
+<tr>
+<td>–accept-regex urlregex</td>
+<td>用正则表达式匹配要下载的url</td>
+</tr>
+<tr>
+<td>–reject-regex urlregex</td>
+<td>用正则表达式匹配要下载的url</td>
+</tr>
+<tr>
+<td>-D,  –domains=LIST</td>
+<td>分号分隔的被接受域的列表</td>
+</tr>
+<tr>
+<td>–exclude-domains=LIST</td>
+<td>分号分隔的不被接受的域的列表</td>
+</tr>
+<tr>
+<td>–follow-ftp</td>
+<td>跟踪HTML文档中的FTP链接</td>
+</tr>
+<tr>
+<td>–follow-tags=LIST</td>
+<td>分号分隔的被跟踪的HTML标签的列表</td>
+</tr>
+<tr>
+<td>-G,  –ignore-tags=LIST</td>
+<td>分号分隔的被忽略的HTML标签的列表</td>
+</tr>
+<tr>
+<td>-H,  –span-hosts</td>
+<td>当递归时转到外部主机</td>
+</tr>
+<tr>
+<td>-L,  –relative</td>
+<td>仅仅跟踪相对链接</td>
+</tr>
+<tr>
+<td>-I,  –include-directories=LIST</td>
+<td>允许目录的列表</td>
+</tr>
+<tr>
+<td>-X,  –exclude-directories=LIST</td>
+<td>不被包含目录的列表</td>
+</tr>
+<tr>
+<td>-np, –no-parent</td>
+<td>不要追溯到父目录</td>
+</tr>
+</tbody>
+</table>
+<p>curl 参数说明：<br>| command | meaning |<br>| — |—|<br>|-a/–append |上传文件时，附加到目标文件  |<br>| -A/–user-agent <string> | 设置用户代理发送给服务器  |<br>| - anyauth  | 可以使用“任何”身份验证方法  |<br>| -b/–cookie <name=string file=""> |cookie字符串或文件读取位置  |<br>| - basic |使用HTTP基本验证  |<br>| -B/–use-ascii| 使用ASCII /文本传输  |<br>| -c/–cookie-jar <file> |操作结束后把cookie写入到这个文件中  |<br>| -C/–continue-at <offset> | 断点续转  |<br>| -d/–data <data>  | HTTP POST方式传送数据 |<br>| –data-ascii <data> | 以ascii的方式post数据  |<br>| –data-binary <data>| 以二进制的方式post数据  |<br> |–negotiate   |  使用HTTP身份验证|<br> |–digest       | 使用数字身份验证  |<br>| –disable-eprt | 禁止使用EPRT或LPRT  |<br>| –disable-epsv | 禁止使用EPSV  |<br>| -D/–dump-header <file> |把header信息写入到该文件中 |<br>| –egd-file <file>| 为随机数据(SSL)设置EGD socket路径  |<br>| –tcp-nodelay  | 使用TCP_NODELAY选项  |<br>| -e/–referer| 来源网址  |<br>| -E/–cert <cert[:passwd]>| 客户端证书文件和密码 (SSL)  |<br>| –cert-type <type>| 证书文件类型 (DER/PEM/ENG) (SSL)  |<br>| –key <key>    | 私钥文件名 (SSL)  |<br>| –key-type <type> |私钥文件类型 (DER/PEM/ENG) (SSL)  |<br>| –pass  <pass> | 私钥密码 (SSL)  |<br>| –engine <eng>  |加密引擎使用 (SSL). “–engine list” for list  |<br>| –cacert <file> |CA证书 (SSL)  |<br>| –capath <directory>| CA目录 (made using c_rehash) to verify peer against (SSL)  |<br> |–ciphers <list> | SSL密码  |<br>| –compressed    |要求返回是压缩的形式 (using deflate or gzip)  |<br>| –connect-timeout <seconds> |设置最大请求时间  |<br>| –create-dirs  | 建立本地目录的目录层次结构  |<br>| –crlf         | 上传是把LF转变成CRLF  |<br>| -f/–fail       |   连接失败时不显示http错误  |<br>| –ftp-create-dirs| 如果远程目录不存在，创建远程目录  |<br>| –ftp-method [multicwd/nocwd/singlecwd] |控制CWD的使用  |<br>| –ftp-pasv    |  使用 PASV/EPSV 代替端口  |<br>| –ftp-skip-pasv-ip| 使用PASV的时候,忽略该IP地址 |<br>| –ftp-ssl      | 尝试用 SSL/TLS 来进行ftp数据传输  |<br>| –ftp-ssl-reqd  |要求用 SSL/TLS 来进行ftp数据传输  |<br>| -F/–form <name=content> |模拟http表单提交数据  |<br>| -form-string <name=string> |模拟http表单提交数据  |<br>| -g/–globoff |禁用网址序列和范围使用{}和[]  |<br>| -G/–get |以get的方式来发送数据  |<br>| -h/–help |帮助  |<br>| -H/–header |<line></line>自定义头信息传递给服务器  |<br>| –ignore-content-length  |忽略的HTTP头信息的长度  |<br>| -i/–include |输出时包括protocol头信息  |<br>| -I/–head | 只显示文档信息  |<br>| -j/–junk-session-cookies |读取文件进忽略session cookie  |<br>| –interface <interface> |使用指定网络接口/地址  |<br>| –krb4 <level> | 使用指定安全级别的krb4  |<br>| -k/–insecure |允许不使用证书到SSL站点  |<br>| -K/–config  |指定的配置文件读取  |<br>| -l/–list-only |列出ftp目录下的文件名称|<br>| –limit-rate <rate> |设置传输速度  |<br>| –local-port<num> |强制使用本地端口号  |<br>| -m/–max-time <seconds> |设置最大传输时间|<br>| –max-redirs <num> |设置最大读取的目录数  |<br>| –max-filesize <bytes> |设置最大下载的文件总量  |<br>| -M/–manual  |显示全手动  |<br>| -n/–netrc |从netrc文件中读取用户名和密码  |<br>| –netrc-optional |使用 .netrc 或者 URL来覆盖-n  |<br>| –ntlm          |使用 HTTP NTLM 身份验证  |<br>| -N/–no-buffer |禁用缓冲输出  |<br>| -o/–output| 把输出写到该文件中  |<br>| -O/–remote-name |把输出写到该文件中，保留远程文件的文件名  |<br>| -p/–proxytunnel   |使用HTTP代理  |<br>| –proxy-anyauth |选择任一代理身份验证方法 |<br>| –proxy-basic   |在代理上使用基本身份验证  |<br>| –proxy-digest | 在代理上使用数字身份验证  |<br>| –proxy-ntlm    |在代理上使用ntlm身份验证  |<br>| -P/–ftp-port <address> |使用端口地址，而不是使用PASV  |<br>| -Q/–quote <cmd>|文件传输前，发送命令到服务器  |<br>| -r/–range <range>|检索来自HTTP/1.1或FTP服务器字节范围  |<br>| –range-file |读取（SSL）的随机文件  |<br>| -R/–remote-time |  在本地生成文件时，保留远程文件时间  |<br> |–retry <num>   |传输出现问题时，重试的次数  |<br> |–retry-delay <seconds> | 传输出现问题时，设置重试间隔时间  |<br>| –retry-max-time <seconds> |传输出现问题时，设置最大重试时间  |<br>| -s/–silent|静音模式。不输出任何东西  |<br>| -S/–show-error|   显示错误  |<br>| –socks4 <host[:port]>| 用socks4代理给定主机和端口  |<br>| –socks5 <host[:port]> |用socks5代理给定主机和端口  |<br>| -t/–telnet-option <opt=val> |Telnet选项设置  |<br>| –trace <file>  |对指定文件进行debug  |<br>| –trace-time    |跟踪/详细输出时，添加时间戳  |<br>| -T/–upload-file <file> |上传文件  |<br>| -u/–user <user[:password]>|设置服务器的用户和密码  |<br>| -U/–proxy-user <user[:password]>|设置代理用户名和密码  |<br>| -V/–version| 显示版本信息  |<br>| -x/–proxy <host[:port]>|在给定的端口上使用HTTP代理  |<br>| -X/–request <command>|指定什么命令  |<br>| -y/–speed-time |放弃限速所要的时间。默认为30  |<br>| -Y/–speed-limit |停止传输速度的限制，速度时间’秒  |<br>| -z/–time-cond | 传送时间设置|<br>| -0/–http1.0 | 使用HTTP 1.0  |<br>| -1/–tlsv1 | 使用TLSv1（SSL）  |<br>| -2/–sslv2 |使用SSLv2的（SSL）  |<br>| -3/–sslv3  |       使用的SSLv3（SSL）  |<br>| –3p-quote |     like -Q for the source URL for 3rd party transfer  |<br>| –3p-url      |  使用url，进行第三方传送  |<br>| –3p-user   |    使用用户名和密码，进行第三方传送  |<br>| -4/–ipv4  | 使用IP4  |<br>| -6/–ipv6   |使用IP6  |<br>| -#/–progress-bar |用进度条显示当前的传送状态  |</host[:port]></user[:password]></user[:password]></file></file></opt=val></host[:port]></host[:port]></seconds></seconds></num></range></cmd></address></bytes></num></seconds></num></rate></level></interface></name=string></name=content></seconds></list></directory></file></eng></pass></type></key></type></cert[:passwd]></file></file></data></data></data></offset></file></name=string></string></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>坚持原创，感谢支持！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>点我打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.png" alt="Di&Pan 微信。"/>
+        <p>微信。</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.png" alt="Di&Pan 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    Pan
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://www.xpandi.top/posts/bec7b859/" title="用wget和curl下载文件">http://www.xpandi.top/posts/bec7b859/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/linux/" rel="tag"><i class="fa fa-tag"></i> linux</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+          <div class="wp_rating">
+            <div id="wpac-rating"></div>
+          </div>
+        
+
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/posts/21185e19/" rel="next" title="图片小记">
+                <i class="fa fa-chevron-left"></i> 图片小记
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/posts/2f57a694/" rel="prev" title="正则表达式">
+                正则表达式 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+<span class="jiathis_txt">分享到：</span>
+<a class="jiathis_button_tsina"></a>
+<a class="jiathis_button_weixin"></a>
+<a class="jiathis_button_qzone"></a>
+<a class="jiathis_button_copy"></a>
+<a class="jiathis_button_share"></a>
+<a href="http://www.jiathis.com/share?uid=2152088" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+var jiathis_config={
+  data_track_clickback:true,
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=2152088" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+  
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Di&Pan</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">34</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">22</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">32</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          <div class="links-of-author motion-element">
+            
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/xpandi-top" target="_blank" title="GitHub">
+                    
+                      <i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:xpandi@qq.com" target="_blank" title="E-Mail">
+                    
+                      <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://weibo.com/u/3182500054" target="_blank" title="新浪微博">
+                    
+                      <i class="fa fa-fw fa-weibo"></i>新浪微博</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="http://p15ezcjt2.bkt.clouddn.com/qrcode/wechat_platformqrcode_for_gh_a4a268acb731_258.jpg" target="_blank" title="微信公众号">
+                    
+                      <i class="fa fa-fw fa-wechat"></i>微信公众号</a>
+                </span>
+              
+            
+          </div>
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2017 &mdash; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Di&Pan</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+    <span title="全站字数统计">22.1k</span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-hand-o-up"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://xpandi.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://www.xpandi.top/posts/bec7b859/';
+          this.page.identifier = 'posts/bec7b859/';
+          this.page.title = '用wget和curl下载文件';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://xpandi.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+  <script type="text/javascript">
+  wpac_init = window.wpac_init || [];
+  wpac_init.push({widget: 'Rating', id: 8611,
+    el: 'wpac-rating',
+    color: 'fc6423'
+  });
+  (function() {
+    if ('WIDGETPACK_LOADED' in window) return;
+    WIDGETPACK_LOADED = true;
+    var mc = document.createElement('script');
+    mc.type = 'text/javascript';
+    mc.async = true;
+    mc.src = '//embed.widgetpack.com/widget.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+  })();
+  </script>
+
+
+  
+
+  
+
+  
+
+</body>
+</html>
