@@ -5,9 +5,10 @@ categories:
   - sql
 copyright: true
 comments: true
+author: Di
+abbrlink: 3bea323b
 date: 2018-09-11 20:32:45
 tags:
-author: Di
 ---
 粗略学了一点皮毛吧。
 
