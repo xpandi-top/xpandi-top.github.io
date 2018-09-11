@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.xpandi.top/"/>
-  <updated>2018-09-10T15:01:49.539Z</updated>
+  <updated>2018-09-11T13:45:13.280Z</updated>
   <id>http://www.xpandi.top/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>sql学习小记</title>
+    <link href="http://www.xpandi.top/posts/3bea323b/"/>
+    <id>http://www.xpandi.top/posts/3bea323b/</id>
+    <published>2018-09-11T12:32:45.000Z</published>
+    <updated>2018-09-11T13:45:13.280Z</updated>
+    
+    <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><p>粗略学了一点皮毛吧。</p><p><img src="http://p15ezcjt2.bkt.clouddn.com/小书匠/1536669246706.png" alt="sololearn—sql"></p><a id="more"></a><h3 id="一些学习工具"><a href="#一些学习工具" class="headerlink" title="一些学习工具"></a>一些学习工具</h3><p>app：sololearn<br>网站：w3school<br>课程：coursera-用MySQL管理大数据</p><h3 id="关于数据库"><a href="#关于数据库" class="headerlink" title="关于数据库"></a>关于数据库</h3><h4 id="理想的数据库特点"><a href="#理想的数据库特点" class="headerlink" title="理想的数据库特点"></a>理想的数据库特点</h4><pre><code>easy retrievaleasy updatingaccessibility for mutiple peple at the same timedata consistencyspace efficiencyspeedsecurity</code></pre><h4 id="relational-databases"><a href="#relational-databases" class="headerlink" title="relational databases"></a>relational databases</h4><p>subsets  theme tables<br>interacts</p><p>set theory: common features<br>relational agebra</p><p>tables = smallest logical subsets of data</p><p>each column represents a unique category of information</p><p>each raw must be unique</p><p>order of columns or rows doesn’t matter</p><h4 id="database-organization"><a href="#database-organization" class="headerlink" title="database organization"></a>database organization</h4><p>Er diagrams</p><p>relational schemas</p><h5 id="ER-diagram"><a href="#ER-diagram" class="headerlink" title="ER diagram"></a>ER diagram</h5><p>for each software package, the data base must keep track of a unique SPID, SPName and No.of installations<br>for each computer, the database must keep track of a unique CompID, compmodel and compMake<br>for each employee, the database must keep track of a unique EmpID, EmpName and multiple EmpSkills</p><p>each software package can be installed at one or more computers, the software not installed is not tracked. each Computer can install install more than one pacakges and also can install none.<br>date of install is tracked when each software is installed.</p><p>each software packaged can be certificated to one or more employee to use.<br>each employee have certificated to zero of morethan one softwares</p><p>information about vehicles is being tracked and will be made into table called “VeHICLE” in a data base.<br>for each vehicle, the VIN, LPNUMber,State,model, make and yeas is recorded and will be entered as a seperate column. each value entered into a row of the Vin column will be unique, each combination of values in the lpnumber and state columns will be unique, but each value in the lpnnumber or state columns , on their own, does not have to be unique.<br>values in the model, make, and year columns do not have to be unique.<br>the vun will serve as the primary key.</p><p>information about vehecle is being tracked and will be made into table called “vehecle” in a database.<br>for each vehicle, the lpnumber, state, model, make and year are recorded and will be entered as a seperate column. each value entered into a row of the lpnumber column and state will be unique. each value in the model, make, year columns, on their own, does not have to be unique. lpnumber and state will serve as the primary key.</p><h5 id="other"><a href="#other" class="headerlink" title="other"></a>other</h5><p>set theory<br>relational scheme<br>er diagram</p><h3 id="sql-query"><a href="#sql-query" class="headerlink" title="sql query"></a>sql query</h3><p>一般分号作为每句话的命令，对于有一些数据库，对于另一些并不需要<br>    `<br>SQL分为两个部分<br>数据操作语言：DML：查询和更新指令<br>数据定义语言：DDL：创建或删除表格。我们也可以定义索引（键），规定表之间的链接，以及施加表间的约束</p><p>查询和更新指令构成了 SQL 的 DML 部分：</p><p>SELECT - 从数据库表中获取数据<br>UPDATE - 更新数据库表中的数据<br>DELETE - 从数据库表中删除数据<br>INSERT INTO - 向数据库表中插入数据<br>SQL 的数据定义语言 (DDL) 部分使我们有能力创建或删除表格。我们也可以定义索引（键），规定表之间的链接，以及施加表间的约束。</p><p>SQL 中最重要的 DDL 语句:</p><p>CREATE DATABASE - 创建新数据库<br>ALTER DATABASE - 修改数据库<br>CREATE TABLE - 创建新表<br>ALTER TABLE - 变更（改变）数据库表<br>DROP TABLE - 删除表<br>CREATE INDEX - 创建索引（搜索键）<br>DROP INDEX - 删除索引</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;粗略学了一点皮毛吧。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://p15ezcjt2.bkt.clouddn.com/小书匠/1536669246706.png&quot; alt=&quot;sololearn—sql&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="技术" scheme="http://www.xpandi.top/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="sql" scheme="http://www.xpandi.top/categories/%E6%8A%80%E6%9C%AF/sql/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>awk用法</title>
@@ -459,30 +482,6 @@
       <category term="dlib" scheme="http://www.xpandi.top/tags/dlib/"/>
     
       <category term="unubtu" scheme="http://www.xpandi.top/tags/unubtu/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Linux字符处理</title>
-    <link href="http://www.xpandi.top/posts/8cd3a42b/"/>
-    <id>http://www.xpandi.top/posts/8cd3a42b/</id>
-    <published>2018-04-02T12:40:40.000Z</published>
-    <updated>2018-09-10T15:01:05.517Z</updated>
-    
-    <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><p>把最近学到的工具整理一下：grep, cut, paste, join。<br>更厉害的sed, awk, regex还是单开文章来写吧。<br><a id="more"></a></p><h3 id="cut"><a href="#cut" class="headerlink" title="cut"></a>cut</h3><p><code>cut</code>的作用是从文件中按列取内容。<br>参数：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">-f  按field取列。</span><br><span class="line">-d  分隔符，用于指示文件以什么分列，默认为tab。与-f配合使用。</span><br><span class="line">-c  按字符数取列。</span><br></pre></td></tr></table></figure></p><p>示例：（就用手边的一个bed文件做例子）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"># 原始文件内容</span><br><span class="line">head text.bed</span><br><span class="line">chr120902475</span><br><span class="line">chr125843083</span><br><span class="line">chr146924832</span><br><span class="line">chr146925658</span><br><span class="line">chr149015658</span><br><span class="line">chr158056469</span><br><span class="line">chr158106469</span><br><span class="line">chr166286716</span><br><span class="line">chr166286720</span><br><span class="line">chr166286738</span><br><span class="line"></span><br><span class="line">#某些字符的列</span><br><span class="line">cut -c 1-2,6-9 text.bed | head</span><br><span class="line">ch090</span><br><span class="line">ch584</span><br><span class="line">ch692</span><br><span class="line">ch692</span><br><span class="line">ch901</span><br><span class="line">ch805</span><br><span class="line">ch810</span><br><span class="line">ch628</span><br><span class="line">ch628</span><br><span class="line">ch628</span><br><span class="line"></span><br><span class="line"># 第2列内容</span><br><span class="line">cut -f2 text.bed | head</span><br><span class="line">2090</span><br><span class="line">2584</span><br><span class="line">4692</span><br><span class="line">4692</span><br><span class="line">4901</span><br><span class="line">5805</span><br><span class="line">5810</span><br><span class="line">6628</span><br><span class="line">6628</span><br><span class="line">6628</span><br></pre></td></tr></table></figure></p><h3 id="paste"><a href="#paste" class="headerlink" title="paste"></a><code>paste</code></h3><p>paste顾名思义就是把内容“粘贴”起来。</p><h3 id="join"><a href="#join" class="headerlink" title="join"></a><code>join</code></h3><h3 id="grep"><a href="#grep" class="headerlink" title="grep"></a><code>grep</code></h3><p>grep 是一个非常常用的，查询／匹配用的命令。<br>基本用法：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep apple test.txt</span><br></pre></td></tr></table></figure></p><p>参数含义：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ man grep</span><br><span class="line">     grep [-abcdDEFGHhIiJLlmnOopqRSsUVvwxZ] [-A num] [-B num] [-C[num]]</span><br><span class="line">          [-e pattern] [-f file] [--binary-files=value] [--color[=when]]</span><br><span class="line">          [--colour[=when]] [--context[=num]] [--label] [--line-buffered]</span><br><span class="line">          [--null] [pattern] [file ...]</span><br></pre></td></tr></table></figure></p><p>小技巧：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># match tab in grep 匹配制表符</span></span><br><span class="line">grep apple$<span class="string">'\t'</span> test.txt</span><br><span class="line"></span><br><span class="line"><span class="comment"># logic and in grep 逻辑与</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># logic or in grep 逻辑或</span></span><br></pre></td></tr></table></figure></p><p>未完待续…</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;把最近学到的工具整理一下：grep, cut, paste, join。&lt;br&gt;更厉害的sed, awk, regex还是单开文章来写吧。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="技术" scheme="http://www.xpandi.top/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-      <category term="linux" scheme="http://www.xpandi.top/categories/%E6%8A%80%E6%9C%AF/linux/"/>
-    
-    
-      <category term="linux" scheme="http://www.xpandi.top/tags/linux/"/>
     
   </entry>
   
