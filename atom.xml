@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.xpandi.top/"/>
-  <updated>2018-09-11T13:45:13.280Z</updated>
+  <updated>2018-09-11T13:45:44.257Z</updated>
   <id>http://www.xpandi.top/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://www.xpandi.top/posts/3bea323b/"/>
     <id>http://www.xpandi.top/posts/3bea323b/</id>
     <published>2018-09-11T12:32:45.000Z</published>
-    <updated>2018-09-11T13:45:13.280Z</updated>
+    <updated>2018-09-11T13:45:44.257Z</updated>
     
     <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><p>粗略学了一点皮毛吧。</p><p><img src="http://p15ezcjt2.bkt.clouddn.com/小书匠/1536669246706.png" alt="sololearn—sql"></p><a id="more"></a><h3 id="一些学习工具"><a href="#一些学习工具" class="headerlink" title="一些学习工具"></a>一些学习工具</h3><p>app：sololearn<br>网站：w3school<br>课程：coursera-用MySQL管理大数据</p><h3 id="关于数据库"><a href="#关于数据库" class="headerlink" title="关于数据库"></a>关于数据库</h3><h4 id="理想的数据库特点"><a href="#理想的数据库特点" class="headerlink" title="理想的数据库特点"></a>理想的数据库特点</h4><pre><code>easy retrievaleasy updatingaccessibility for mutiple peple at the same timedata consistencyspace efficiencyspeedsecurity</code></pre><h4 id="relational-databases"><a href="#relational-databases" class="headerlink" title="relational databases"></a>relational databases</h4><p>subsets  theme tables<br>interacts</p><p>set theory: common features<br>relational agebra</p><p>tables = smallest logical subsets of data</p><p>each column represents a unique category of information</p><p>each raw must be unique</p><p>order of columns or rows doesn’t matter</p><h4 id="database-organization"><a href="#database-organization" class="headerlink" title="database organization"></a>database organization</h4><p>Er diagrams</p><p>relational schemas</p><h5 id="ER-diagram"><a href="#ER-diagram" class="headerlink" title="ER diagram"></a>ER diagram</h5><p>for each software package, the data base must keep track of a unique SPID, SPName and No.of installations<br>for each computer, the database must keep track of a unique CompID, compmodel and compMake<br>for each employee, the database must keep track of a unique EmpID, EmpName and multiple EmpSkills</p><p>each software package can be installed at one or more computers, the software not installed is not tracked. each Computer can install install more than one pacakges and also can install none.<br>date of install is tracked when each software is installed.</p><p>each software packaged can be certificated to one or more employee to use.<br>each employee have certificated to zero of morethan one softwares</p><p>information about vehicles is being tracked and will be made into table called “VeHICLE” in a data base.<br>for each vehicle, the VIN, LPNUMber,State,model, make and yeas is recorded and will be entered as a seperate column. each value entered into a row of the Vin column will be unique, each combination of values in the lpnumber and state columns will be unique, but each value in the lpnnumber or state columns , on their own, does not have to be unique.<br>values in the model, make, and year columns do not have to be unique.<br>the vun will serve as the primary key.</p><p>information about vehecle is being tracked and will be made into table called “vehecle” in a database.<br>for each vehicle, the lpnumber, state, model, make and year are recorded and will be entered as a seperate column. each value entered into a row of the lpnumber column and state will be unique. each value in the model, make, year columns, on their own, does not have to be unique. lpnumber and state will serve as the primary key.</p><h5 id="other"><a href="#other" class="headerlink" title="other"></a>other</h5><p>set theory<br>relational scheme<br>er diagram</p><h3 id="sql-query"><a href="#sql-query" class="headerlink" title="sql query"></a>sql query</h3><p>一般分号作为每句话的命令，对于有一些数据库，对于另一些并不需要<br>    `<br>SQL分为两个部分<br>数据操作语言：DML：查询和更新指令<br>数据定义语言：DDL：创建或删除表格。我们也可以定义索引（键），规定表之间的链接，以及施加表间的约束</p><p>查询和更新指令构成了 SQL 的 DML 部分：</p><p>SELECT - 从数据库表中获取数据<br>UPDATE - 更新数据库表中的数据<br>DELETE - 从数据库表中删除数据<br>INSERT INTO - 向数据库表中插入数据<br>SQL 的数据定义语言 (DDL) 部分使我们有能力创建或删除表格。我们也可以定义索引（键），规定表之间的链接，以及施加表间的约束。</p><p>SQL 中最重要的 DDL 语句:</p><p>CREATE DATABASE - 创建新数据库<br>ALTER DATABASE - 修改数据库<br>CREATE TABLE - 创建新表<br>ALTER TABLE - 变更（改变）数据库表<br>DROP TABLE - 删除表<br>CREATE INDEX - 创建索引（搜索键）<br>DROP INDEX - 删除索引</p>]]></content>
     
@@ -348,13 +348,13 @@
     <link href="http://www.xpandi.top/posts/39d1af20/"/>
     <id>http://www.xpandi.top/posts/39d1af20/</id>
     <published>2018-06-11T08:34:30.000Z</published>
-    <updated>2018-06-13T15:42:28.826Z</updated>
+    <updated>2018-09-11T14:05:28.013Z</updated>
     
-    <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><p>不定期更新一些自己常用的学习的应用和网站<br><a id="more"></a></p><h3 id="文献管理"><a href="#文献管理" class="headerlink" title="文献管理"></a>文献管理</h3><ul><li><p><a href="https://www.mendeley.com/" target="_blank" rel="noopener">Mendley</a><br>个人很喜欢的文献管理软件，可以读pdf也可以导出文献，也有插件。非常容易上手</p></li><li><p><a href="https://www.researcher-app.com/" target="_blank" rel="noopener">Reaearcher</a><br>账号可以跟mendley绑定，绑定后可以把文献发送到mendley.手机端可follow多种文献。昨天才发现nature有科幻小说。</p></li></ul><h3 id="搜索"><a href="#搜索" class="headerlink" title="搜索"></a>搜索</h3><ul><li>Google Scholar</li></ul><h3 id="翻译"><a href="#翻译" class="headerlink" title="翻译"></a>翻译</h3><ul><li>Google Translation</li></ul><h3 id="写作"><a href="#写作" class="headerlink" title="写作"></a>写作</h3><ul><li><p>小书匠<br>markdown写作，超级推荐吧。目前在用</p></li><li><p>LaTEX<br>也就这两天才用的，跟markdown很像吧。</p></li></ul>]]></content>
+    <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><p>不定期更新一些自己常用的学习的应用和网站<br>目前：文献管理，搜索，翻译，写作，代码<br><a id="more"></a></p><h3 id="文献管理"><a href="#文献管理" class="headerlink" title="文献管理"></a>文献管理</h3><ul><li><p><a href="https://www.mendeley.com/" target="_blank" rel="noopener">Mendley</a><br>个人很喜欢的文献管理软件，可以读pdf也可以导出文献，也有插件。非常容易上手</p></li><li><p><a href="https://www.researcher-app.com/" target="_blank" rel="noopener">Reaearcher</a><br>账号可以跟mendley绑定，绑定后可以把文献发送到mendley.手机端可follow多种文献。昨天才发现nature有科幻小说。</p></li></ul><h3 id="搜索"><a href="#搜索" class="headerlink" title="搜索"></a>搜索</h3><ul><li>Google Scholar</li></ul><h3 id="翻译"><a href="#翻译" class="headerlink" title="翻译"></a>翻译</h3><ul><li>Google Translation</li></ul><h3 id="写作"><a href="#写作" class="headerlink" title="写作"></a>写作</h3><ul><li><p>小书匠<br>markdown写作，超级推荐吧。目前在用</p></li><li><p>LaTEX<br>也就这两天才用的，跟markdown很像吧。</p></li></ul><h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><p><a href="http://www.w3school.com" target="_blank" rel="noopener">http://www.w3school.com</a></p><p>sololearn</p>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;不定期更新一些自己常用的学习的应用和网站&lt;br&gt;
+      &lt;p&gt;不定期更新一些自己常用的学习的应用和网站&lt;br&gt;目前：文献管理，搜索，翻译，写作，代码&lt;br&gt;
     
     </summary>
     
