@@ -5,6 +5,7 @@ categories:
   - 小日记
 copyright: true
 comments: true
+abbrlink: edc6eda0
 date: 2018-09-13 17:53:25
 tags:
 author:
