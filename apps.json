@@ -1,0 +1,25 @@
+{
+  "generated_at": "2026-06-28T00:00:00Z",
+  "apps": [
+    {
+      "name": "BOTC Companion",
+      "description": "A companion tool for Blood on the Clocktower.",
+      "category": "board-game",
+      "status": "active",
+      "featured": true,
+      "url": "https://apps.xpandi.top/botc-companion/",
+      "repo": "https://github.com/xpandi-top/botc-companion",
+      "updated_at": "2026-06-01T00:00:00Z"
+    },
+    {
+      "name": "Value Journal",
+      "description": "A self-care journaling tool for reflection.",
+      "category": "self-care",
+      "status": "active",
+      "featured": true,
+      "url": "https://apps.xpandi.top/value-journal/",
+      "repo": "https://github.com/xpandi-top/value-journal",
+      "updated_at": "2026-06-01T00:00:00Z"
+    }
+  ]
+}
