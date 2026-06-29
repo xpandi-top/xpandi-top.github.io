@@ -1,25 +1,45 @@
 {
-  "generated_at": "2026-06-28T00:00:00Z",
+  "generated_at": "2026-06-29T10:18:18.788Z",
   "apps": [
     {
-      "name": "BOTC Companion",
-      "description": "A companion tool for Blood on the Clocktower.",
+      "name": "Botc Script Editor",
+      "description": "",
       "category": "board-game",
       "status": "active",
       "featured": true,
-      "url": "https://apps.xpandi.top/botc-companion/",
-      "repo": "https://github.com/xpandi-top/botc-companion",
-      "updated_at": "2026-06-01T00:00:00Z"
+      "url": null,
+      "repo": "https://github.com/xpandi-top/botc-script-editor",
+      "updated_at": "2026-06-01T12:33:29Z"
     },
     {
-      "name": "Value Journal",
-      "description": "A self-care journaling tool for reflection.",
+      "name": "Energy Journal Template",
+      "description": "Printable / iPad-friendly energy observation journal page designer",
       "category": "self-care",
       "status": "active",
       "featured": true,
-      "url": "https://apps.xpandi.top/value-journal/",
-      "repo": "https://github.com/xpandi-top/value-journal",
-      "updated_at": "2026-06-01T00:00:00Z"
+      "url": null,
+      "repo": "https://github.com/xpandi-top/energy-journal-template",
+      "updated_at": "2026-06-29T00:35:21Z"
+    },
+    {
+      "name": "LobbyPing",
+      "description": "",
+      "category": "productivity",
+      "status": "active",
+      "featured": false,
+      "url": "https://lobby-ping.vercel.app",
+      "repo": "https://github.com/xpandi-top/lobbyPing",
+      "updated_at": "2026-06-04T22:52:50Z"
+    },
+    {
+      "name": "Value Sort",
+      "description": "Discover what truly matters to you ",
+      "category": "self-care",
+      "status": "active",
+      "featured": true,
+      "url": null,
+      "repo": "https://github.com/xpandi-top/value-sort",
+      "updated_at": "2026-06-01T12:56:30Z"
     }
   ]
 }
