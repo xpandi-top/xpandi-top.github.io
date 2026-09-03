@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T10:04:44.428Z",
+  "generated_at": "2026-09-03T10:15:13.146Z",
   "apps": [
     {
       "name": "Botc Script Editor",
@@ -9,7 +9,7 @@
       "featured": true,
       "url": null,
       "repo": "https://github.com/xpandi-top/botc-script-editor",
-      "updated_at": "2026-08-31T22:47:27Z"
+      "updated_at": "2026-09-03T05:39:12Z"
     },
     {
       "name": "Energy Journal Template",
